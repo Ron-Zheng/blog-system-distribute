@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import ron.blog.blog_common.resp.Resp;
-import ron.blog.blog_domain.user.UserLogin;
+import ron.blog.blog_domain.user.BlogUserBase;
 import ron.blog.blog_facade.user.UserBaseFacade;
 import ron.blog.blog_pc.controller.base.BaseController;
 
@@ -32,8 +32,10 @@ public class BlogController extends BaseController {
 	 */
 	@RequestMapping(value={"/list","/"})
 	public String blogList(HttpServletRequest request) {
-		UserLogin user = new UserLogin();
-		user.setUsername(" Blog");
+		BlogUserBase user = new BlogUserBase();
+		user.setUserLoginName("632815143@qq.com");
+		user.setUserLoginPassword("0794f55dcaada3f45c9436b7a11dfdaf2cf82176");
+		
 		Resp resp = userBaseService.login(user);
 		request.setAttribute("resp", resp);
 		return "blog/list";

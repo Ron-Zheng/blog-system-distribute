@@ -1,7 +1,7 @@
 package ron.blog.blog_facade.user;
 
 import ron.blog.blog_common.resp.Resp;
-import ron.blog.blog_domain.user.UserLogin;
+import ron.blog.blog_domain.user.BlogUserBase;
 
 public interface UserBaseFacade {
 	
@@ -11,5 +11,5 @@ public interface UserBaseFacade {
 	 * @Date 2017年8月22日 下午2:55:22
 	 * @return
 	 */
-	Resp login(UserLogin user);
+	Resp login(BlogUserBase user);
 }

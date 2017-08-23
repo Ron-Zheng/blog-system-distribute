@@ -1,6 +1,5 @@
-/blog_common/
-/blog_dao/
-/blog_domain/
-/blog_facade/
-/blog_pc/
-/blog_service/
+/target/
+/.settings/
+.project
+.classpath
+.gitignore

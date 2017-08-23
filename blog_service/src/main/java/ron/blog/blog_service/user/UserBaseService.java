@@ -1,10 +1,12 @@
 package ron.blog.blog_service.user;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import ron.blog.blog_common.resp.ResCode;
 import ron.blog.blog_common.resp.Resp;
-import ron.blog.blog_domain.user.UserLogin;
+import ron.blog.blog_dao.dao.user.BlogUserBaseDao;
+import ron.blog.blog_domain.user.BlogUserBase;
 import ron.blog.blog_facade.user.UserBaseFacade;
 
 /**
@@ -15,6 +17,9 @@ import ron.blog.blog_facade.user.UserBaseFacade;
  */
 @Component
 public class UserBaseService implements UserBaseFacade {
+	
+	@Autowired
+	BlogUserBaseDao blogUserBaseDao;
 
 	/**
 	 * @Comment 用户登录实现
@@ -22,7 +27,8 @@ public class UserBaseService implements UserBaseFacade {
 	 * @Date 2017年8月22日 下午2:55:37
 	 * @return
 	 */
-	public Resp login(UserLogin user) {
-		return new Resp(ResCode.SUCCESS,"Hello"+user.getUsername());
+	public Resp login(BlogUserBase user) {
+		user = blogUserBaseDao.login(user.getUserLoginName(), user.getUserLoginPassword());
+		return new Resp(ResCode.SUCCESS,"Hello"+user.getUserEmail());
 	}
 }
