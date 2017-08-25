@@ -14,7 +14,6 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<!-- spring version -->
 		<spring.version>4.3.5.RELEASE</spring.version>
 		<jdk.version>1.8</jdk.version>
 		<jstl.version>1.2</jstl.version>
@@ -45,6 +44,13 @@
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 			<scope>test</scope>
+		</dependency>
+		
+		<!-- Javax 依赖 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servlet_version}</version>
 		</dependency>
 
 		<!-- Spring 依赖 -->

@@ -27,13 +27,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- Javax 依赖 -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>${servlet_version}</version>
-		</dependency>
-
 		<!-- Spring 依赖 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
