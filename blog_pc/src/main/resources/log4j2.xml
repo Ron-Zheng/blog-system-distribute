@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="trace" monitorInterval="30">
+	<!-- Dev -->
+	<Properties>
+        <Property name="DETAIL_LOG_NAME">ron_blog</Property>
+        <Property name="ERROR_LOG_NAME">error_ron_blog</Property>
+        <Property name="LOG_HOME">F:/MyProject/ron_blog/blog/logs</Property>
+    </Properties>
+      
+	<Appenders>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %class{36}#%M [line:%L] - %msg%xEx%n" />
+		</Console>
+
+		<RollingFile name="detailLog" filename="${LOG_HOME}/${DETAIL_LOG_NAME}.log" filepattern="${LOG_HOME}/${DETAIL_LOG_NAME}-%d{yyyy-MM-dd}-%i.log">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %class{36}#%M [line:%L] - %msg%xEx%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="100" />
+		</RollingFile>
+
+		<RollingFile name="errorLog" fileName="${LOG_HOME}/${ERROR_LOG_NAME}.log" filePattern="${LOG_HOME}/${ERROR_LOG_NAME}.%d{yyyy-MM-dd}.%i.log">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %class{36}#%M [line:%L] - %msg%xEx%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="60" />
+		</RollingFile>
+	</Appenders>
+	
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="console" level="trace"/><!--部署到服务器上时要注释掉 -->
+			<AppenderRef ref="detailLog" level="debug"/>
+			<AppenderRef ref="errorLog" level="error"/>
+		</Root>
+		
+	</Loggers>
+</Configuration>
