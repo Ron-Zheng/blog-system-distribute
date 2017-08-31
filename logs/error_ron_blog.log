@@ -1,0 +1,1 @@
+2017-08-29 09:58:55.094 [http-apr-8080-exec-5] ERROR ron.blog.blog_pc.controller.user.UserController#register [line:35] - java.lang.ArithmeticException: / by zero

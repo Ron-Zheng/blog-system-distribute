@@ -1,0 +1,12 @@
+@media screen and (min-width: 720px) {
+	.ui-responsive-center{
+		width:50%;
+		margin:0px auto;
+	}	
+}
+@media screen and (max-width: 720px) {
+	.ui-responsive-center{
+		width:100%;
+		margin:0px auto;
+	}	
+}

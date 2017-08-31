@@ -32,12 +32,6 @@ public class BlogController extends BaseController {
 	 */
 	@RequestMapping(value={"/list","/"})
 	public String blogList(HttpServletRequest request) {
-		BlogUserBase user = new BlogUserBase();
-		user.setUserLoginName("632815143@qq.com");
-		user.setUserLoginPassword("0794f55dcaada3f45c9436b7a11dfdaf2cf82176");
-		
-		Resp resp = userBaseService.login(user);
-		request.setAttribute("resp", resp);
 		return "blog/list";
 	}
 }

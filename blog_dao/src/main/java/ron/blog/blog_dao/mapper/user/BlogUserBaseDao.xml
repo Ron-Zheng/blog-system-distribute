@@ -15,4 +15,8 @@
 	<select id="login" parameterType="map" resultMap="userBaseResultMap">
 		SELECT * FROM blog_user_base WHERE user_login_name=#{userLoginName} AND user_login_password=#{userLoginPassword}
 	</select>
+	
+	<select id="checkEmail" parameterType="java.lang.String" resultType="java.lang.Integer">
+		SELECT COUNT(*) FROM blog_user_base WHERE user_email=#{value}
+	</select>
 </mapper>

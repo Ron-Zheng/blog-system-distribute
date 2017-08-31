@@ -1,0 +1,220 @@
+body {
+    background-color: #eee;
+    min-height: 100%;
+    min-width: 320px;
+}
+.clearfix{
+	height: 0;
+    clear: both;
+}
+.header {
+    height: 64px;
+    width: 100%;
+    background-color: #393D49;
+    border-bottom: 1px solid #404553;
+    position: fixed;
+    top:0px;
+    z-index: 9999;
+}
+
+.nav{
+	position: absolute;
+    float: right;
+    right: 0px;
+}
+
+
+.single-main{
+	background-color: #fff;
+	padding:10px;
+	margin-bottom:30px;
+}
+
+.content-first{
+	margin-top:90px !important;
+}
+
+.main{
+	max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.index-learn{
+	margin: 25px 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0;
+}
+
+.index-learn div {
+    padding: 30px;
+    line-height: 24px;
+    display: inline-block;
+    font-size: 14px;
+    text-align: left;
+    vertical-align: top;
+    cursor: pointer;
+    background: #fff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+.index-learn div:first-child {
+    margin-left: 0;
+}
+
+.index-learn .layui-field-title p {
+    height: 72px;
+    line-height: 24px;
+}
+
+.index-learn .layui-field-title legend {
+    margin: 0 20px 20px 0;
+    padding: 0 20px;
+    text-align: center;
+}
+.page_left_list li {
+    position: relative;
+    height: 110px;
+    margin-bottom: 15px;
+    padding: 15px 15px 15px 200px;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+.page_left_list li .pic {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    height: 110px;
+    overflow: hidden;
+    line-height: 110px;
+    width: 165px;
+}
+.page_left_list li .pic img {
+    vertical-align: middle;
+    width: 100%;
+    display: inline-block;
+}
+.page_left_list li .title {
+    line-height: 26px;
+    font-size: 0;
+    position: relative;
+}
+.page_left_list li .title * {
+    display: inline-block;
+    vertical-align: top;
+}
+.page_left_list li .date_hits {
+    position: relative;
+    line-height: 20px;
+    font-size: 12px;
+    color: #666;
+}
+.page_left_list li .date_hits span {
+    padding-right: 15px;
+    height: 20px;
+    line-height: 20px;
+}
+.page_left_list li .date_hits span a {
+    color: #009688;
+}
+.page_left_list li .date_hits .hits {
+    position: absolute;
+    right: 50px;
+    top: 0;
+}
+.page_left_list li .date_hits .commonts {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.page_left_list li .desc {
+    height: 48px;
+    line-height: 24px;
+    overflow: hidden;
+    margin-top: 8px;
+    color: #444;
+}
+.page_left_list li .title a {
+    max-width: 99%;
+    margin-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 26px;
+}
+.page_right{
+	padding-left:1%;
+}
+.right_item h3{
+	width: auto;
+    margin: 0;
+    height: 38px;
+    line-height: 40px;
+    padding: 0 15px;
+    border: none;
+    background-color: #fff;
+    border-bottom: 1px solid #009688;
+}
+.page_right_list {
+    margin: 0px 0 20px;
+    background: #fff;
+    padding: 10px 10px 10px 15px;
+}
+.page_right_list li {
+    line-height: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    list-style: decimal-leading-zero inside;
+    color: #009688;
+    font-style: oblique;
+}
+.trans_3 {
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+.page_right_list li span {
+    font-size: 12px;
+    color: #888;
+    display: inline-block;
+    vertical-align: top;
+    font-style: normal;
+}
+.page_right_list li a {
+    max-width: 74%;
+    margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    font-style: normal;
+}
+.footer{
+	padding: 15px 0;
+    line-height: 24px;
+    text-align: center;
+    color: #999;
+    font-weight: 300;
+    width: 100%;
+    clear: both;
+    border-top: 1px solid #404553;
+    background-color: #393D49;
+    position:relative;
+	bottom:0;  
+}

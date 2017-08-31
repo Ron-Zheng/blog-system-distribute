@@ -2,7 +2,9 @@ package ron.blog.blog_common.resp;
 
 public enum ResCode {
 	SUCCESS("00","success"),
-	SYS_ERROR("99","系统异常");
+	SYS_ERROR("99","系统异常"),
+	DATA_EMPTY("01","必填项为空"),
+	DATA_EXIST("02","数据已经存在");
 	
 	private String code;
 	private String text;
