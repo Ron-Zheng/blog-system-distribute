@@ -1550,3 +1550,776 @@
 2017-08-31 18:20:31.914 [http-apr-8080-exec-5] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: 632815143@qq.com(String)
 2017-08-31 18:20:31.917 [http-apr-8080-exec-5] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
 2017-08-31 18:20:31.918 [http-apr-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6595e56d]
+2017-09-01 17:05:43.935 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-01 17:06:01.911 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 17:06:08.652 [http-apr-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:06:08.662 [http-apr-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48df4849] was not registered for synchronization because synchronization is not active
+2017-09-01 17:06:09.072 [http-apr-8080-exec-8] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:06:09.082 [http-apr-8080-exec-8] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:06:09.114 [http-apr-8080-exec-8] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:06:09.149 [http-apr-8080-exec-8] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:06:09.154 [http-apr-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48df4849]
+2017-09-01 17:06:09.155 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:06:09.158 [http-apr-8080-exec-8] ERROR ron.blog.blog_common.config.SysConfig#load [line:74] - 字段名mail_host赋值失败 java.lang.NullPointerException: null
+	at ron.blog.blog_common.config.SysConfig.load(SysConfig.java:69) [blog_common-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_common.config.SysConfig.<clinit>(SysConfig.java:37) [blog_common-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_service.user.UserBaseService.sendVerifyCode(UserBaseService.java:67) [blog_service-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_pc.controller.user.UserController.getVerifyCode(UserController.java:63) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129) [sitemesh-2.4.2.jar:?]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77) [sitemesh-2.4.2.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106) [catalina.jar:8.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522) [catalina.jar:8.0.33]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095) [tomcat-coyote.jar:8.0.33]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489) [tomcat-coyote.jar:8.0.33]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.33]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_20]
+
+2017-09-01 17:06:09.166 [http-apr-8080-exec-8] ERROR ron.blog.blog_common.config.SysConfig#load [line:74] - 字段名mail_address赋值失败 java.lang.NullPointerException: null
+	at ron.blog.blog_common.config.SysConfig.load(SysConfig.java:69) [blog_common-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_common.config.SysConfig.<clinit>(SysConfig.java:37) [blog_common-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_service.user.UserBaseService.sendVerifyCode(UserBaseService.java:67) [blog_service-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_pc.controller.user.UserController.getVerifyCode(UserController.java:63) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129) [sitemesh-2.4.2.jar:?]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77) [sitemesh-2.4.2.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106) [catalina.jar:8.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522) [catalina.jar:8.0.33]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095) [tomcat-coyote.jar:8.0.33]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489) [tomcat-coyote.jar:8.0.33]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.33]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_20]
+
+2017-09-01 17:06:09.169 [http-apr-8080-exec-8] ERROR ron.blog.blog_common.config.SysConfig#load [line:74] - 字段名mail_passowrd赋值失败 java.lang.NullPointerException: null
+	at ron.blog.blog_common.config.SysConfig.load(SysConfig.java:69) [blog_common-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_common.config.SysConfig.<clinit>(SysConfig.java:37) [blog_common-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_service.user.UserBaseService.sendVerifyCode(UserBaseService.java:67) [blog_service-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_pc.controller.user.UserController.getVerifyCode(UserController.java:63) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129) [sitemesh-2.4.2.jar:?]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77) [sitemesh-2.4.2.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106) [catalina.jar:8.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522) [catalina.jar:8.0.33]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095) [tomcat-coyote.jar:8.0.33]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489) [tomcat-coyote.jar:8.0.33]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.33]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_20]
+
+2017-09-01 17:12:57.957 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-01 17:13:04.533 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:13:04.548 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11e1f89a] was not registered for synchronization because synchronization is not active
+2017-09-01 17:13:05.048 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:13:05.055 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:13:05.083 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:13:05.106 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:13:05.111 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11e1f89a]
+2017-09-01 17:13:05.113 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:13:58.773 [http-apr-8080-exec-4] ERROR ron.blog.blog_common.config.SysConfig#load [line:74] - 字段名mail_host赋值失败 java.lang.NullPointerException: null
+	at ron.blog.blog_common.config.SysConfig.load(SysConfig.java:69) [blog_common-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_common.config.SysConfig.<clinit>(SysConfig.java:37) [blog_common-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_service.user.UserBaseService.sendVerifyCode(UserBaseService.java:67) [blog_service-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_pc.controller.user.UserController.getVerifyCode(UserController.java:63) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129) [sitemesh-2.4.2.jar:?]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77) [sitemesh-2.4.2.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106) [catalina.jar:8.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522) [catalina.jar:8.0.33]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095) [tomcat-coyote.jar:8.0.33]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489) [tomcat-coyote.jar:8.0.33]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.33]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_20]
+
+2017-09-01 17:14:05.091 [http-apr-8080-exec-4] ERROR ron.blog.blog_common.config.SysConfig#load [line:74] - 字段名mail_address赋值失败 java.lang.NullPointerException: null
+	at ron.blog.blog_common.config.SysConfig.load(SysConfig.java:69) [blog_common-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_common.config.SysConfig.<clinit>(SysConfig.java:37) [blog_common-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_service.user.UserBaseService.sendVerifyCode(UserBaseService.java:67) [blog_service-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_pc.controller.user.UserController.getVerifyCode(UserController.java:63) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129) [sitemesh-2.4.2.jar:?]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77) [sitemesh-2.4.2.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106) [catalina.jar:8.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522) [catalina.jar:8.0.33]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095) [tomcat-coyote.jar:8.0.33]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489) [tomcat-coyote.jar:8.0.33]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.33]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_20]
+
+2017-09-01 17:14:26.883 [http-apr-8080-exec-4] ERROR ron.blog.blog_common.config.SysConfig#load [line:74] - 字段名mail_passowrd赋值失败 java.lang.NullPointerException: null
+	at ron.blog.blog_common.config.SysConfig.load(SysConfig.java:69) [blog_common-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_common.config.SysConfig.<clinit>(SysConfig.java:37) [blog_common-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_service.user.UserBaseService.sendVerifyCode(UserBaseService.java:67) [blog_service-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_pc.controller.user.UserController.getVerifyCode(UserController.java:63) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129) [sitemesh-2.4.2.jar:?]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77) [sitemesh-2.4.2.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106) [catalina.jar:8.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522) [catalina.jar:8.0.33]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095) [tomcat-coyote.jar:8.0.33]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489) [tomcat-coyote.jar:8.0.33]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.33]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_20]
+
+2017-09-01 17:16:11.738 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-01 17:16:19.900 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:16:19.908 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@166030c9] was not registered for synchronization because synchronization is not active
+2017-09-01 17:16:20.388 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:16:20.395 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:16:20.425 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:16:20.446 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:16:20.450 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@166030c9]
+2017-09-01 17:16:20.452 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:16:20.807 [http-apr-8080-exec-4] ERROR ron.blog.blog_common.utils.MailUtils#sendSimpleEmail [line:46] - 向【ron.zheng@tfschange.com】发送“Ron博客验证码”邮件失败！ org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.qq.com:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421) ~[commons-email-1.4.jar:1.4]
+	at org.apache.commons.mail.Email.send(Email.java:1448) ~[commons-email-1.4.jar:1.4]
+	at ron.blog.blog_common.utils.MailUtils.sendSimpleEmail(MailUtils.java:44) [blog_common-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_service.user.UserBaseService.sendVerifyCode(UserBaseService.java:67) [blog_service-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_pc.controller.user.UserController.getVerifyCode(UserController.java:63) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129) [sitemesh-2.4.2.jar:?]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77) [sitemesh-2.4.2.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106) [catalina.jar:8.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522) [catalina.jar:8.0.33]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095) [tomcat-coyote.jar:8.0.33]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489) [tomcat-coyote.jar:8.0.33]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.33]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_20]
+Caused by: javax.mail.AuthenticationFailedException: 530 Error: A secure connection is requiered(such as ssl). More information at http://service.mail.qq.com/cgi-bin/help?id=28
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:892) ~[javax.mail-1.5.2.jar:1.5.2]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:814) ~[javax.mail-1.5.2.jar:1.5.2]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:728) ~[javax.mail-1.5.2.jar:1.5.2]
+	at javax.mail.Service.connect(Service.java:386) ~[javax.mail-1.5.2.jar:1.5.2]
+	at javax.mail.Service.connect(Service.java:245) ~[javax.mail-1.5.2.jar:1.5.2]
+	at javax.mail.Service.connect(Service.java:194) ~[javax.mail-1.5.2.jar:1.5.2]
+	at javax.mail.Transport.send0(Transport.java:253) ~[javax.mail-1.5.2.jar:1.5.2]
+	at javax.mail.Transport.send(Transport.java:124) ~[javax.mail-1.5.2.jar:1.5.2]
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411) ~[commons-email-1.4.jar:1.4]
+	... 50 more
+
+2017-09-01 17:20:38.958 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-01 17:20:50.634 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:20:50.644 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72394ab0] was not registered for synchronization because synchronization is not active
+2017-09-01 17:20:51.054 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:20:51.061 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:20:51.088 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:20:51.108 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:20:51.111 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72394ab0]
+2017-09-01 17:20:51.113 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:20:51.440 [http-apr-8080-exec-4] ERROR ron.blog.blog_common.utils.MailUtils#sendSimpleEmail [line:46] - 向【ron.zheng@tfschange.com】发送“Ron博客验证码”邮件失败！ org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.qq.com:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421) ~[commons-email-1.4.jar:1.4]
+	at org.apache.commons.mail.Email.send(Email.java:1448) ~[commons-email-1.4.jar:1.4]
+	at ron.blog.blog_common.utils.MailUtils.sendSimpleEmail(MailUtils.java:44) [blog_common-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_service.user.UserBaseService.sendVerifyCode(UserBaseService.java:67) [blog_service-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_pc.controller.user.UserController.getVerifyCode(UserController.java:63) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129) [sitemesh-2.4.2.jar:?]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77) [sitemesh-2.4.2.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106) [catalina.jar:8.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522) [catalina.jar:8.0.33]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095) [tomcat-coyote.jar:8.0.33]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489) [tomcat-coyote.jar:8.0.33]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.33]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_20]
+Caused by: javax.mail.AuthenticationFailedException: 530 Error: A secure connection is requiered(such as ssl). More information at http://service.mail.qq.com/cgi-bin/help?id=28
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:892) ~[javax.mail-1.5.2.jar:1.5.2]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:814) ~[javax.mail-1.5.2.jar:1.5.2]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:728) ~[javax.mail-1.5.2.jar:1.5.2]
+	at javax.mail.Service.connect(Service.java:386) ~[javax.mail-1.5.2.jar:1.5.2]
+	at javax.mail.Service.connect(Service.java:245) ~[javax.mail-1.5.2.jar:1.5.2]
+	at javax.mail.Service.connect(Service.java:194) ~[javax.mail-1.5.2.jar:1.5.2]
+	at javax.mail.Transport.send0(Transport.java:253) ~[javax.mail-1.5.2.jar:1.5.2]
+	at javax.mail.Transport.send(Transport.java:124) ~[javax.mail-1.5.2.jar:1.5.2]
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411) ~[commons-email-1.4.jar:1.4]
+	... 50 more
+
+2017-09-01 17:23:44.027 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-01 17:23:52.056 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:23:52.071 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6be56443] was not registered for synchronization because synchronization is not active
+2017-09-01 17:23:52.563 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:23:52.571 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:23:52.601 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:23:52.621 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:23:52.624 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6be56443]
+2017-09-01 17:23:52.626 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:23:52.959 [http-apr-8080-exec-4] ERROR ron.blog.blog_common.utils.MailUtils#sendSimpleEmail [line:46] - 向【ron.zheng@tfschange.com】发送“Ron博客验证码”邮件失败！ org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.qq.com:25
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1421) ~[commons-email-1.4.jar:1.4]
+	at org.apache.commons.mail.Email.send(Email.java:1448) ~[commons-email-1.4.jar:1.4]
+	at ron.blog.blog_common.utils.MailUtils.sendSimpleEmail(MailUtils.java:44) [blog_common-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_service.user.UserBaseService.sendVerifyCode(UserBaseService.java:67) [blog_service-0.0.1-SNAPSHOT.jar:?]
+	at ron.blog.blog_pc.controller.user.UserController.getVerifyCode(UserController.java:63) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129) [sitemesh-2.4.2.jar:?]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77) [sitemesh-2.4.2.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106) [catalina.jar:8.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522) [catalina.jar:8.0.33]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095) [tomcat-coyote.jar:8.0.33]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489) [tomcat-coyote.jar:8.0.33]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.33]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_20]
+Caused by: javax.mail.AuthenticationFailedException: 530 Error: A secure connection is requiered(such as ssl). More information at http://service.mail.qq.com/cgi-bin/help?id=28
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:892) ~[javax.mail-1.5.2.jar:1.5.2]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:814) ~[javax.mail-1.5.2.jar:1.5.2]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:728) ~[javax.mail-1.5.2.jar:1.5.2]
+	at javax.mail.Service.connect(Service.java:386) ~[javax.mail-1.5.2.jar:1.5.2]
+	at javax.mail.Service.connect(Service.java:245) ~[javax.mail-1.5.2.jar:1.5.2]
+	at javax.mail.Service.connect(Service.java:194) ~[javax.mail-1.5.2.jar:1.5.2]
+	at javax.mail.Transport.send0(Transport.java:253) ~[javax.mail-1.5.2.jar:1.5.2]
+	at javax.mail.Transport.send(Transport.java:124) ~[javax.mail-1.5.2.jar:1.5.2]
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1411) ~[commons-email-1.4.jar:1.4]
+	... 50 more
+
+2017-09-01 17:30:10.990 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-01 17:31:22.521 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:31:22.532 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d305628] was not registered for synchronization because synchronization is not active
+2017-09-01 17:31:22.962 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:31:22.969 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:31:23.000 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:31:23.020 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:31:23.024 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d305628]
+2017-09-01 17:31:23.027 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:33:11.331 [http-apr-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:33:11.332 [http-apr-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11758c29] was not registered for synchronization because synchronization is not active
+2017-09-01 17:33:11.335 [http-apr-8080-exec-7] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:33:11.336 [http-apr-8080-exec-7] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:33:11.337 [http-apr-8080-exec-7] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:33:11.340 [http-apr-8080-exec-7] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:33:11.341 [http-apr-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11758c29]
+2017-09-01 17:33:11.341 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:34:45.532 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-01 17:34:48.734 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 17:35:00.344 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:35:00.355 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2611fa23] was not registered for synchronization because synchronization is not active
+2017-09-01 17:35:00.772 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:35:00.778 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:35:00.803 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:35:00.821 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:35:00.826 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2611fa23]
+2017-09-01 17:35:00.831 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:35:49.171 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-01 17:36:05.668 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:36:05.684 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7273fb92] was not registered for synchronization because synchronization is not active
+2017-09-01 17:36:06.088 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:36:06.096 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:36:06.124 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:36:06.141 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:36:06.145 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7273fb92]
+2017-09-01 17:36:06.146 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:37:05.825 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-01 17:37:13.869 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:37:13.882 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b6205cb] was not registered for synchronization because synchronization is not active
+2017-09-01 17:37:14.335 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:37:14.341 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:37:14.369 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:37:14.389 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:37:14.395 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b6205cb]
+2017-09-01 17:37:14.397 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:37:41.649 [http-apr-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:37:41.651 [http-apr-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@346a26fc] was not registered for synchronization because synchronization is not active
+2017-09-01 17:37:41.653 [http-apr-8080-exec-7] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:37:41.654 [http-apr-8080-exec-7] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:37:41.655 [http-apr-8080-exec-7] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:37:41.657 [http-apr-8080-exec-7] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:37:41.658 [http-apr-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@346a26fc]
+2017-09-01 17:37:41.659 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:39:59.645 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-01 17:40:07.753 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:40:07.764 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@648473d4] was not registered for synchronization because synchronization is not active
+2017-09-01 17:40:08.213 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:40:08.220 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:40:08.248 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:40:08.266 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:40:08.271 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@648473d4]
+2017-09-01 17:40:08.272 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:41:35.424 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-01 17:41:59.062 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:41:59.074 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d88f527] was not registered for synchronization because synchronization is not active
+2017-09-01 17:41:59.531 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:41:59.540 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:41:59.577 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:41:59.598 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:41:59.602 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d88f527]
+2017-09-01 17:41:59.603 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:43:10.799 [http-apr-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:43:10.800 [http-apr-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@114dbd66] was not registered for synchronization because synchronization is not active
+2017-09-01 17:43:10.801 [http-apr-8080-exec-7] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:43:10.802 [http-apr-8080-exec-7] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:43:10.803 [http-apr-8080-exec-7] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:43:10.805 [http-apr-8080-exec-7] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:43:10.806 [http-apr-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@114dbd66]
+2017-09-01 17:43:10.806 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:45:04.864 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:45:04.865 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44a51a5e] was not registered for synchronization because synchronization is not active
+2017-09-01 17:45:04.866 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:45:04.867 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:45:04.867 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:45:04.870 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:45:04.870 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44a51a5e]
+2017-09-01 17:45:04.871 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:45:39.378 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 17:55:21.860 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-01 17:55:35.387 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 17:55:43.412 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:55:43.423 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1bcc2a40] was not registered for synchronization because synchronization is not active
+2017-09-01 17:55:43.798 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:55:43.804 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:55:43.828 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:55:43.844 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:55:43.849 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1bcc2a40]
+2017-09-01 17:55:43.850 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:56:32.615 [http-apr-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:56:32.616 [http-apr-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@58bbfd1d] was not registered for synchronization because synchronization is not active
+2017-09-01 17:56:32.618 [http-apr-8080-exec-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:56:32.619 [http-apr-8080-exec-2] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:56:32.620 [http-apr-8080-exec-2] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:56:32.623 [http-apr-8080-exec-2] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:56:32.624 [http-apr-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@58bbfd1d]
+2017-09-01 17:56:32.624 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:56:44.674 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 17:56:44.675 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c901b2f] was not registered for synchronization because synchronization is not active
+2017-09-01 17:56:44.676 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 17:56:44.677 [http-apr-8080-exec-6] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 17:56:44.678 [http-apr-8080-exec-6] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 17:56:44.679 [http-apr-8080-exec-6] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 17:56:44.680 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c901b2f]
+2017-09-01 17:56:44.681 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 17:57:08.172 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 17:58:26.704 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 18:01:44.128 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 18:02:43.986 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 18:02:53.063 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 18:02:53.064 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42c9f847] was not registered for synchronization because synchronization is not active
+2017-09-01 18:02:53.065 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 18:02:53.066 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 18:02:53.067 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 18:02:53.069 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 18:02:53.071 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42c9f847]
+2017-09-01 18:02:53.071 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 18:03:24.285 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 18:03:29.831 [http-apr-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 18:03:29.831 [http-apr-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39a89ae] was not registered for synchronization because synchronization is not active
+2017-09-01 18:03:29.833 [http-apr-8080-exec-9] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 18:03:29.834 [http-apr-8080-exec-9] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 18:03:29.835 [http-apr-8080-exec-9] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 18:03:29.837 [http-apr-8080-exec-9] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 18:03:29.838 [http-apr-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39a89ae]
+2017-09-01 18:03:29.838 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 18:03:38.851 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 18:03:43.560 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 18:03:43.561 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5caf1100] was not registered for synchronization because synchronization is not active
+2017-09-01 18:03:43.563 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 18:03:43.564 [http-apr-8080-exec-6] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 18:03:43.565 [http-apr-8080-exec-6] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 18:03:43.566 [http-apr-8080-exec-6] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 18:03:43.567 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5caf1100]
+2017-09-01 18:03:43.567 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 18:03:52.502 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 18:03:56.179 [http-apr-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 18:03:56.180 [http-apr-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5234694f] was not registered for synchronization because synchronization is not active
+2017-09-01 18:03:56.181 [http-apr-8080-exec-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 18:03:56.182 [http-apr-8080-exec-2] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 18:03:56.183 [http-apr-8080-exec-2] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 18:03:56.185 [http-apr-8080-exec-2] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 18:03:56.186 [http-apr-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5234694f]
+2017-09-01 18:03:56.186 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 18:04:09.285 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 18:04:13.472 [http-apr-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 18:04:13.473 [http-apr-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d53a5dc] was not registered for synchronization because synchronization is not active
+2017-09-01 18:04:13.476 [http-apr-8080-exec-9] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 18:04:13.477 [http-apr-8080-exec-9] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 18:04:13.477 [http-apr-8080-exec-9] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 18:04:13.480 [http-apr-8080-exec-9] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 18:04:13.481 [http-apr-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d53a5dc]
+2017-09-01 18:04:13.481 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 18:04:21.028 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 18:04:24.832 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 18:04:24.833 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a21dee2] was not registered for synchronization because synchronization is not active
+2017-09-01 18:04:24.835 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 18:04:24.836 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 18:04:24.837 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 18:04:24.838 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 18:04:24.839 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a21dee2]
+2017-09-01 18:04:24.839 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 18:06:31.600 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 18:06:35.007 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 18:06:35.008 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1939cd16] was not registered for synchronization because synchronization is not active
+2017-09-01 18:06:35.010 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 18:06:35.010 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 18:06:35.011 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 18:06:35.013 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 18:06:35.013 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1939cd16]
+2017-09-01 18:06:35.013 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 18:06:42.027 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 18:06:45.073 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 18:06:45.073 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ee04316] was not registered for synchronization because synchronization is not active
+2017-09-01 18:06:45.074 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 18:06:45.075 [http-apr-8080-exec-6] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 18:06:45.075 [http-apr-8080-exec-6] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 18:06:45.077 [http-apr-8080-exec-6] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 18:06:45.078 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ee04316]
+2017-09-01 18:06:45.078 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 18:08:18.063 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 18:08:21.451 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 18:08:21.452 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@405d10c5] was not registered for synchronization because synchronization is not active
+2017-09-01 18:08:21.454 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 18:08:21.455 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 18:08:21.456 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 18:08:21.458 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 18:08:21.459 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@405d10c5]
+2017-09-01 18:08:21.460 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-01 18:08:34.076 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 18:09:06.717 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 18:09:10.234 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 18:09:10.235 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@774ae636] was not registered for synchronization because synchronization is not active
+2017-09-01 18:09:10.237 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 18:09:10.238 [http-apr-8080-exec-6] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 18:09:10.239 [http-apr-8080-exec-6] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: 1798129351@qq.com(String)
+2017-09-01 18:09:10.241 [http-apr-8080-exec-6] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 18:09:10.242 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@774ae636]
+2017-09-01 18:09:10.243 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：1798129351@qq.com
+2017-09-01 18:09:12.667 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 18:10:52.451 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 18:10:58.189 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 18:11:11.138 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-01 18:11:16.168 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-01 18:11:16.168 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b250b29] was not registered for synchronization because synchronization is not active
+2017-09-01 18:11:16.170 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-01 18:11:16.171 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-01 18:11:16.172 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-01 18:11:16.175 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-01 18:11:16.176 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b250b29]
+2017-09-01 18:11:16.176 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com

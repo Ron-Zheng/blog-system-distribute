@@ -94,6 +94,9 @@
 						layer.msg('邮箱格式有误', {icon: 5,anim:6});
 						$("input[name='userEmail']").focus();
 					}else{
+						var loadindex = layer.load(2,{
+							  shade: [0.5,'#000']
+						});
 						var json = {"email":email};
 						//发送邮件获取验证码
 						$.ajax({
@@ -102,6 +105,7 @@
 							data:json,
 							dataType: "json",
 							success: function(data){
+								layer.close(loadindex);
 								switch(data.resCode){
 								case '00':
 									layer.msg('验证码已发送，请注意查收！', {icon: 1});
@@ -113,11 +117,12 @@
 									layer.msg('邮箱已经存在，您不能注册', {icon: 5,anim:6});
 									break;
 								case '99':
-									layer.msg('系统错误', {icon: 5,anim:6});
+									layer.msg('验证码发送失败', {icon: 5,anim:6});
 									break;
 								}
 							},
 							error:function(msg){
+								layer.close(loadindex);
 								layer.msg('获取验证码出错', {icon: 5,anim:6});
 							}
 						});

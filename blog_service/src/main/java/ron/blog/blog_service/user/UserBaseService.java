@@ -1,5 +1,7 @@
 package ron.blog.blog_service.user;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -8,6 +10,7 @@ import ron.blog.blog_common.resp.Resp;
 import ron.blog.blog_dao.dao.user.BlogUserBaseDao;
 import ron.blog.blog_domain.user.BlogUserBase;
 import ron.blog.blog_facade.user.UserBaseFacade;
+import ron.blog.blog_service.utils.MailSender;
 
 /**
  * @Comment 用户服务
@@ -17,6 +20,8 @@ import ron.blog.blog_facade.user.UserBaseFacade;
  */
 @Component
 public class UserBaseService implements UserBaseFacade {
+	
+	private Logger logger=LogManager.getLogger(this.getClass());
 	
 	@Autowired
 	BlogUserBaseDao blogUserBaseDao;
@@ -45,5 +50,18 @@ public class UserBaseService implements UserBaseFacade {
 			return true;
 		}
 		return false;
+	}
+
+	/**
+	 * @Comment 发送验证码
+	 * @Author Ron
+	 * @Date 2017年9月1日 下午4:58:39
+	 * @return
+	 */
+	@Override
+	public boolean sendVerifyCode(String email) {
+		String verifyCode = "00101";
+		MailSender.send(email, "Ron博客验证码", "您的验证码为"+verifyCode);
+		return true;
 	}
 }

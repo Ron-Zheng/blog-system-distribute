@@ -58,8 +58,11 @@ public class UserController extends BaseController {
 			if(isExist){
 				resCode = ResCode.DATA_EXIST;
 			}else{
-				//TODO 生成数据并发送邮件，邮件发送成功之后将验证码存入数据库
-				logger.info("发送邮件");
+				//生成数据并发送邮件，邮件发送成功之后将验证码存入数据库
+				logger.info("发送验证码邮件："+email);
+				if(!userBaseService.sendVerifyCode(email)){
+					resCode = ResCode.SYS_ERROR;
+				}
 			}
 		}else{
 			resCode = ResCode.DATA_EMPTY;

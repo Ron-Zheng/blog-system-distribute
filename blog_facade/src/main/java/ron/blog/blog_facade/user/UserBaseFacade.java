@@ -20,4 +20,12 @@ public interface UserBaseFacade {
 	 * @return
 	 */
 	boolean checkEmail(String email);
+	
+	/**
+	 * @Comment 发送验证码
+	 * @Author Ron
+	 * @Date 2017年9月1日 下午4:58:24
+	 * @return
+	 */
+	boolean sendVerifyCode(String email);
 }
