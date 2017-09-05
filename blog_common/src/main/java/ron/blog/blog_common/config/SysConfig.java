@@ -1,8 +1,5 @@
 package ron.blog.blog_common.config;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Field;
@@ -25,10 +22,7 @@ public class SysConfig {
 	
 	@IgnoreAssignment
 	public static final InputStream fileInput = SysConfig.class.getResourceAsStream("/config.properties");
-	
-	@IgnoreAssignment
-	private static long fileModifyTime;//文件修改时间
-	
+
 	@IgnoreAssignment
 	private static Properties prop = new Properties(); 
 	
@@ -36,15 +30,6 @@ public class SysConfig {
 	
 	static{
 		load(fileInput);
-	}
-	
-	private static void load(File file){
-		fileModifyTime = file.lastModified();//更新时间
-		try {
-			load(new FileInputStream(file));
-		} catch (FileNotFoundException e) {
-			logger.error("",e);
-		}
 	}
 	
 	private static void load(InputStream is){

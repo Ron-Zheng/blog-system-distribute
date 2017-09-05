@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 import ron.blog.blog_common.resp.ResCode;
 import ron.blog.blog_common.resp.Resp;
+import ron.blog.blog_common.utils.IdGenerator;
 import ron.blog.blog_dao.dao.user.BlogUserBaseDao;
 import ron.blog.blog_domain.user.BlogUserBase;
 import ron.blog.blog_facade.user.UserBaseFacade;
@@ -60,7 +61,8 @@ public class UserBaseService implements UserBaseFacade {
 	 */
 	@Override
 	public boolean sendVerifyCode(String email) {
-		String verifyCode = "00101";
+		String verifyCode = IdGenerator.getRandomNum(4);
+		logger.info("验证码为："+verifyCode);
 		MailSender.send(email, "Ron博客验证码", "您的验证码为"+verifyCode);
 		return true;
 	}

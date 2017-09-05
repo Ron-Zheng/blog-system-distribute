@@ -2323,3 +2323,46 @@ Caused by: javax.mail.AuthenticationFailedException: 530 Error: A secure connect
 2017-09-01 18:11:16.175 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
 2017-09-01 18:11:16.176 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b250b29]
 2017-09-01 18:11:16.176 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-04 12:11:23.952 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-04 12:13:27.491 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-05 11:12:24.045 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-05 11:13:00.833 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-05 11:13:07.500 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-05 11:13:07.515 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5705cfbe] was not registered for synchronization because synchronization is not active
+2017-09-05 11:13:07.923 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-05 11:13:07.931 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-05 11:13:07.954 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-05 11:13:07.980 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-05 11:13:07.984 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5705cfbe]
+2017-09-05 11:13:07.986 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-05 11:21:11.885 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-05 11:21:20.765 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-05 11:21:25.352 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-05 11:21:25.365 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4dbdcfaa] was not registered for synchronization because synchronization is not active
+2017-09-05 11:21:25.821 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-05 11:21:25.828 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-05 11:21:25.856 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-05 11:21:25.878 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-05 11:21:25.882 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4dbdcfaa]
+2017-09-05 11:21:25.883 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-05 11:25:15.845 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-05 13:03:54.384 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-05 13:04:00.349 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
+2017-09-05 13:04:06.769 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-05 13:04:06.782 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a4fbaaf] was not registered for synchronization because synchronization is not active
+2017-09-05 13:04:07.225 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-05 13:04:07.232 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-05 13:04:07.264 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-05 13:04:07.283 [http-apr-8080-exec-10] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-05 13:04:07.287 [http-apr-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a4fbaaf]
+2017-09-05 13:04:07.289 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-05 13:04:07.291 [http-apr-8080-exec-10] INFO  ron.blog.blog_service.user.UserBaseService#sendVerifyCode [line:65] - 验证码为：1827
+2017-09-05 13:04:16.194 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-05 13:04:16.195 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d91a945] was not registered for synchronization because synchronization is not active
+2017-09-05 13:04:16.198 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-05 13:04:16.199 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-05 13:04:16.200 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-05 13:04:16.202 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-05 13:04:16.203 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d91a945]
+2017-09-05 13:04:16.204 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-05 13:04:16.205 [http-apr-8080-exec-1] INFO  ron.blog.blog_service.user.UserBaseService#sendVerifyCode [line:65] - 验证码为：0212

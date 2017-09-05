@@ -87,8 +87,7 @@
 			$(".btn-getVerifyCode").click(function(){
 				var email = $("input[name='userEmail']").val();
 				if(email==""){
-					layer.msg('请输入邮箱', {icon: 5,anim:6});
-					$("input[name='userEmail']").focus();
+					layer.msg('请输入用户邮箱', {icon: 5,anim:6});
 				}else{
 					if(!REG_EMAIL.test(email)){
 						layer.msg('邮箱格式有误', {icon: 5,anim:6});
