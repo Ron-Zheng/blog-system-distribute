@@ -205,6 +205,71 @@ body {
     vertical-align: top;
     font-style: normal;
 }
+.blog_content{
+	padding: 20px 50px 20px 50px;
+}
+.content_title {
+    width: 100%;
+    font-size: 26px;
+    font-weight: bold;
+}
+.content_aut_block{
+	display: inline-block;
+    width: 100%;
+    line-height: 30px;
+    border: 1px dotted #eee;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #f8f8f8;
+}
+.content_aut{
+	width: 40%;
+    margin: 0 auto;
+}
+.blog_content .content{
+	font-size: 16px;
+	line-height:30px;
+}
+.blog_content > .blog-module-title {
+    border-bottom: 1px solid #009688;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 0 5px 0;
+    margin-bottom: 5px;
+}
+.blog-comment {
+    position: relative;
+    margin-bottom: 10px;
+}
+.blog-comment li {
+    border-bottom: 1px dotted #01AAED;
+    padding: 15px 0 10px 0;
+}
+.comment-parent > img {
+    width: 45px;
+    height: 45px;
+    margin: 5px 5px 5px 0;
+    position: absolute;
+    border-radius: 50px;
+}
+.blog-comment .info, .blog-comment .replycontainer {
+    padding-top: 5px;
+}
+.blog-comment .comment-content, .blog-comment .info, .blog-comment .replycontainer {
+    margin-left: 53px;
+}
+.blog-comment .comment-content {
+    padding: 2px 0 5px 0;
+    min-height: 30px;
+    font-size: 13px;
+}
+.blog-comment .info .username {
+    color: #01AAED;
+}
+.blog-comment .info span {
+    padding-right: 5px;
+}
 .footer{
 	padding: 15px 0;
     line-height: 24px;

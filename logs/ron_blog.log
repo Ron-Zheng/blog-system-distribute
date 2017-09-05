@@ -2366,3 +2366,8 @@ Caused by: javax.mail.AuthenticationFailedException: 530 Error: A secure connect
 2017-09-05 13:04:16.203 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d91a945]
 2017-09-05 13:04:16.204 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:62] - 发送验证码邮件：ron.zheng@tfschange.com
 2017-09-05 13:04:16.205 [http-apr-8080-exec-1] INFO  ron.blog.blog_service.user.UserBaseService#sendVerifyCode [line:65] - 验证码为：0212
+2017-09-05 15:04:17.793 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-05 15:08:16.026 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-05 16:43:09.553 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-05 17:15:15.111 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-05 17:40:17.509 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:41] - 用户进入注册页面
