@@ -1,18 +1,21 @@
 package ron.blog.blog_pc.controller.user;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import ron.blog.blog_common.resp.ResCode;
 import ron.blog.blog_common.resp.Resp;
+import ron.blog.blog_domain.user.BlogUserBase;
 import ron.blog.blog_facade.user.UserBaseFacade;
 import ron.blog.blog_pc.controller.base.BaseController;
 
@@ -77,9 +80,13 @@ public class UserController extends BaseController {
 	 * @return
 	 */
 	@ResponseBody
-	@RequestMapping(value="/register",method=RequestMethod.POST)
-	public Resp registerSubmit(HttpServletRequest request){
-		
-		return null;
+	@RequestMapping(value="/submitRegister",method=RequestMethod.POST)
+	public Resp submitRegister(@Valid BlogUserBase user,BindingResult result,HttpServletRequest request){
+		if (result.hasErrors()) {
+			return new Resp(ResCode.VALIDATE_FAILED, result.getFieldErrors());
+		}else{
+			//注册入库
+			return new Resp(ResCode.SUCCESS, "");
+		}
 	}
 }

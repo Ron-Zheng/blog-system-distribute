@@ -29,6 +29,7 @@
 		<jackson_version>2.8.5 </jackson_version>
 		<java_mail_version>1.4.7</java_mail_version>
 		<commons_email_version>1.4</commons_email_version>
+		<hibernate_validator_version>6.0.2.Final</hibernate_validator_version>
 	</properties>
 
 	<modules>
@@ -206,9 +207,15 @@
 			<version>${slf4j.version}</version>
 		</dependency>
 		<!-- LOGGING end -->
+		<!-- hibernate验证引擎依赖start -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		    <version>${hibernate_validator_version}</version>
+		</dependency>
+		<!-- hibernate验证引擎依赖end -->
 	</dependencies>
 	<build>
-
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

@@ -86,6 +86,10 @@
 		<servlet-name>default</servlet-name>
 		<url-pattern>*.woff</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.properties</url-pattern>
+	</servlet-mapping>
 
 	<!-- 添加Sitemesh 3过滤器start -->
 	<filter>

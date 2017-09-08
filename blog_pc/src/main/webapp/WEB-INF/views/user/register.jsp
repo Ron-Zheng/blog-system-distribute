@@ -16,7 +16,7 @@
 			  <legend>请输入您的注册信息</legend>
 			</fieldset>
 			<div class="ui-responsive-center">
-				<form class="layui-form" action="">
+				<form class="layui-form" action="" id="register-form">
 					<div class="layui-form-item">
 					    <label class="layui-form-label">登录名称</label>
 					    <div class="layui-input-block">
@@ -32,7 +32,7 @@
 				    <div class="layui-form-item">
 					    <label class="layui-form-label">请输入密码</label>
 					    <div class="layui-input-inline">
-					      <input type="password" name="password" lay-verify="required|pass" placeholder="请输入密码" autocomplete="off" class="layui-input">
+					      <input type="password" name="userLoginPassword" lay-verify="required|pass" placeholder="请输入密码" autocomplete="off" class="layui-input">
 					    </div>
 					    <div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
 					</div>
@@ -61,6 +61,7 @@
 			</blockquote>
 		</div>
 	</div>
+	<jsp:include page="../include/i18nMsg.jsp"/>
 	<script>
 		layui.use(['form', 'layedit', 'laydate'], function(){
 		  var form = layui.form
@@ -70,27 +71,56 @@
 		  
 		  //自定义验证规则
 		  form.verify({
-		    pass: [/(.+){6,12}$/, '密码必须6到12位']
+		    pass: [/(.+){6,12}$/, i18nMsg('common.validate.psw.length')]
 		  });
 		  
 		  //监听提交
 		  form.on('submit(register)', function(data){
-		    layer.alert(JSON.stringify(data.field), {
-		      title: '最终的提交信息'
-		    })
+		    $.ajax({
+				type:"POST",
+				url:"user/submitRegister",
+				data:$("#register-form").serialize(),
+				success: function(data){
+					//layer.msg(data.resCode);
+					switch(data.resCode){
+					case '00':
+						//注册成功
+						location.href=$("base").attr("href")+"user/login";
+						break;
+					case '03':{
+						//验证失败
+						var jsonData=data.data;
+						$(jsonData).each(function(i){
+							var obj=jsonData[i];
+							var field=obj.field;
+							var msg =obj.defaultMessage;
+							layer.tips(i18nMsg(msg), "input[name='"+ field +"']", {
+								  tipsMore: true
+							}); 
+						});
+					}
+						break;
+					default:
+						break;
+					}
+				},
+				error:function(msg){
+					layer.msg(i18nMsg('common.msg.failed'), {icon: 5,anim:6});
+				}
+			});
 		    
 		    return false;
 		  });
-		});
+		}); 
 		
 		$(function(){
 			$(".btn-getVerifyCode").click(function(){
 				var email = $("input[name='userEmail']").val();
 				if(email==""){
-					layer.msg('请输入用户邮箱', {icon: 5,anim:6});
+					layer.msg(i18nMsg('common.validate.email.blank'), {icon: 5,anim:6});
 				}else{
 					if(!REG_EMAIL.test(email)){
-						layer.msg('邮箱格式有误', {icon: 5,anim:6});
+						layer.msg(i18nMsg('common.validate.email.format.error'), {icon: 5,anim:6});
 						$("input[name='userEmail']").focus();
 					}else{
 						var loadindex = layer.load(2,{
@@ -107,22 +137,22 @@
 								layer.close(loadindex);
 								switch(data.resCode){
 								case '00':
-									layer.msg('验证码已发送，请注意查收！', {icon: 1});
+									layer.msg(i18nMsg('common.validate.verifycode.sendsuccess'), {icon: 1});
 									break;
 								case '01':
-									layer.msg('请输入邮箱', {icon: 5,anim:6});
+									layer.msg(i18nMsg('common.validate.email.blank'), {icon: 5,anim:6});
 									break;
 								case '02':
-									layer.msg('邮箱已经存在，您不能注册', {icon: 5,anim:6});
+									layer.msg(i18nMsg('common.validate.email.exist'), {icon: 5,anim:6});
 									break;
 								case '99':
-									layer.msg('验证码发送失败', {icon: 5,anim:6});
+									layer.msg(i18nMsg('common.validate.verifycode.sendfailed'), {icon: 5,anim:6});
 									break;
 								}
 							},
 							error:function(msg){
 								layer.close(loadindex);
-								layer.msg('获取验证码出错', {icon: 5,anim:6});
+								layer.msg(i18nMsg('common.msg.failed'), {icon: 5,anim:6});
 							}
 						});
 					}
