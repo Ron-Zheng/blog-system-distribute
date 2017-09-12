@@ -13,10 +13,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import ron.blog.blog_common.constant.VerifyCodeEnum;
 import ron.blog.blog_common.resp.ResCode;
 import ron.blog.blog_common.resp.Resp;
 import ron.blog.blog_domain.user.BlogUserBase;
 import ron.blog.blog_facade.user.UserBaseFacade;
+import ron.blog.blog_facade.user.VerifyCodeFacade;
 import ron.blog.blog_pc.controller.base.BaseController;
 
 /**
@@ -32,6 +34,8 @@ public class UserController extends BaseController {
 	
 	@Autowired
 	UserBaseFacade userBaseService;
+	@Autowired
+	VerifyCodeFacade verifyCodeService;
 	
 	/**
 	 * @Comment 用户注册
@@ -63,9 +67,8 @@ public class UserController extends BaseController {
 			}else{
 				//生成数据并发送邮件，邮件发送成功之后将验证码存入数据库
 				logger.info("发送验证码邮件："+email);
-				if(!userBaseService.sendVerifyCode(email)){
-					resCode = ResCode.SYS_ERROR;
-				}
+				String uid = verifyCodeService.insertVerifyCode(email,VerifyCodeEnum.type.REGISTER);
+				return new Resp(ResCode.SUCCESS, uid);
 			}
 		}else{
 			resCode = ResCode.DATA_EMPTY;
@@ -85,8 +88,17 @@ public class UserController extends BaseController {
 		if (result.hasErrors()) {
 			return new Resp(ResCode.VALIDATE_FAILED, result.getFieldErrors());
 		}else{
-			//注册入库
-			return new Resp(ResCode.SUCCESS, "");
+			//验证验证码
+			String vuid=request.getParameter("verifyCodeUid");
+			String vCode = request.getParameter("verifyCode");
+			Resp vResp = verifyCodeService.checkVerifyCode(vuid, vCode);
+			
+			if(vResp.getResCode().equals(ResCode.SUCCESS.getCode())){
+				//注册入库
+				return userBaseService.insertUser(user);
+			}else{
+				return vResp;
+			}
 		}
 	}
 }

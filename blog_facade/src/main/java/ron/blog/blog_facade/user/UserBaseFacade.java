@@ -22,10 +22,10 @@ public interface UserBaseFacade {
 	boolean checkEmail(String email);
 	
 	/**
-	 * @Comment 发送验证码
+	 * @Comment 添加用户
 	 * @Author Ron
-	 * @Date 2017年9月1日 下午4:58:24
+	 * @Date 2017年9月11日 下午5:41:56
 	 * @return
 	 */
-	boolean sendVerifyCode(String email);
+	Resp insertUser(BlogUserBase user);
 }

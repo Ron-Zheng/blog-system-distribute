@@ -7,6 +7,14 @@ import org.hibernate.validator.constraints.Length;
 public class BlogUserBase {
 	private Integer id;
 	
+	private String uid;
+	
+	private String userRealyName;
+	
+	private String userPhone;
+	
+	private String userPosition;
+	
 	@NotBlank(message="common.validate.notblank")
 	private String userLoginName;
 	
@@ -40,5 +48,29 @@ public class BlogUserBase {
 	}
 	public void setId(Integer id) {
 		this.id = id;
+	}
+	public String getUid() {
+		return uid;
+	}
+	public void setUid(String uid) {
+		this.uid = uid;
+	}
+	public String getUserRealyName() {
+		return userRealyName;
+	}
+	public void setUserRealyName(String userRealyName) {
+		this.userRealyName = userRealyName;
+	}
+	public String getUserPhone() {
+		return userPhone;
+	}
+	public void setUserPhone(String userPhone) {
+		this.userPhone = userPhone;
+	}
+	public String getUserPosition() {
+		return userPosition;
+	}
+	public void setUserPosition(String userPosition) {
+		this.userPosition = userPosition;
 	}
 }

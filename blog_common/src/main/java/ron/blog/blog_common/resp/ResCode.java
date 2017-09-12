@@ -5,7 +5,9 @@ public enum ResCode {
 	SYS_ERROR("99","系统异常"),
 	DATA_EMPTY("01","必填项为空"),
 	DATA_EXIST("02","数据已经存在"),
-	VALIDATE_FAILED("03","验证失败");
+	VALIDATE_FAILED("03","验证失败"),
+	VERIFY_CODE_ERROR("04","验证码错误"),
+	EXPIRED("05","超时");
 	
 	private String code;
 	private String text;

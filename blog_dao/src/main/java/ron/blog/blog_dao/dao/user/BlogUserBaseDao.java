@@ -20,4 +20,12 @@ public interface BlogUserBaseDao {
 	 * @return
 	 */
 	int checkEmail(String email);
+	
+	/**
+	 * @Comment 插入用户
+	 * @Author Ron
+	 * @Date 2017年9月11日 下午5:53:52
+	 * @return
+	 */
+	int insert(BlogUserBase userBase);
 }

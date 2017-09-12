@@ -9,9 +9,9 @@ import ron.blog.blog_common.resp.ResCode;
 import ron.blog.blog_common.resp.Resp;
 import ron.blog.blog_common.utils.IdGenerator;
 import ron.blog.blog_dao.dao.user.BlogUserBaseDao;
+import ron.blog.blog_dao.dao.user.BlogVerifyCodeDao;
 import ron.blog.blog_domain.user.BlogUserBase;
 import ron.blog.blog_facade.user.UserBaseFacade;
-import ron.blog.blog_service.utils.MailSender;
 
 /**
  * @Comment 用户服务
@@ -26,7 +26,6 @@ public class UserBaseService implements UserBaseFacade {
 	
 	@Autowired
 	BlogUserBaseDao blogUserBaseDao;
-
 	/**
 	 * @Comment 用户登录实现
 	 * @Author Ron
@@ -54,16 +53,22 @@ public class UserBaseService implements UserBaseFacade {
 	}
 
 	/**
-	 * @Comment 发送验证码
+	 * @Comment 用户注册
 	 * @Author Ron
-	 * @Date 2017年9月1日 下午4:58:39
+	 * @Date 2017年9月11日 下午5:43:23
 	 * @return
 	 */
 	@Override
-	public boolean sendVerifyCode(String email) {
-		String verifyCode = IdGenerator.getRandomNum(4);
-		logger.info("验证码为："+verifyCode);
-		MailSender.send(email, "Ron博客验证码", "您的验证码为"+verifyCode);
-		return true;
+	public Resp insertUser(BlogUserBase user) {
+		//生成Uid
+		try {
+			String uid = IdGenerator.genUUID();
+			user.setUid(uid);
+			blogUserBaseDao.insert(user);
+			return new Resp(ResCode.SUCCESS, "");
+		} catch (Exception e) {
+			logger.error("用户注册失败，用户邮箱{}",user.getUserEmail());
+			return new Resp(ResCode.SYS_ERROR, "");
+		}
 	}
 }

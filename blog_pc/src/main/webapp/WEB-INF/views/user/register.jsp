@@ -49,6 +49,7 @@
 					      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
 					    </div>
 					</div>
+					<input type="hidden" name="verifyCodeUid" >
 				</form>
 			</div>
 			<blockquote class="layui-elem-quote layui-text">
@@ -85,7 +86,8 @@
 					switch(data.resCode){
 					case '00':
 						//注册成功
-						location.href=$("base").attr("href")+"user/login";
+						//location.href=$("base").attr("href")+"user/login";
+						layer.msg(i18nMsg('common.msg.success'), {icon: 1});
 						break;
 					case '03':{
 						//验证失败
@@ -100,7 +102,21 @@
 						});
 					}
 						break;
+					case '04':
+						layer.tips(i18nMsg('common.validate.verifycode.error'), "input[name='verifyCode']", {
+							  tipsMore: true
+						}); 
+						break;
+					case '05':
+						layer.tips(i18nMsg('common.validate.verifycode.expired'), "input[name='verifyCode']", {
+							  tipsMore: true
+						});
+						break;
+					case '99':
+						layer.msg(i18nMsg('common.msg.failed'), {icon: 5,anim:6});
+						break;
 					default:
+						layer.msg(i18nMsg('common.msg.failed'), {icon: 5,anim:6});
 						break;
 					}
 				},
@@ -138,6 +154,7 @@
 								switch(data.resCode){
 								case '00':
 									layer.msg(i18nMsg('common.validate.verifycode.sendsuccess'), {icon: 1});
+									$("input[name='verifyCodeUid']").val(data.data);
 									break;
 								case '01':
 									layer.msg(i18nMsg('common.validate.email.blank'), {icon: 5,anim:6});

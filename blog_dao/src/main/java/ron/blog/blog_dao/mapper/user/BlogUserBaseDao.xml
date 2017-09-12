@@ -19,4 +19,13 @@
 	<select id="checkEmail" parameterType="java.lang.String" resultType="java.lang.Integer">
 		SELECT COUNT(*) FROM blog_user_base WHERE user_email=#{value}
 	</select>
+	
+	<insert id="insert" parameterType="ron.blog.blog_domain.user.BlogUserBase" >
+	    insert into blog_user_base (uid, user_login_name, 
+	      user_login_password, user_realy_name, user_email, 
+	      user_phone, user_position)
+	    values (#{uid}, #{userLoginName}, 
+	      #{userLoginPassword}, #{userRealyName}, #{userEmail}, 
+	      #{userPhone}, #{userPosition})
+	 </insert>
 </mapper>
