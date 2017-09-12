@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 import ron.blog.blog_common.resp.ResCode;
 import ron.blog.blog_common.resp.Resp;
+import ron.blog.blog_common.security.SecurityUtils;
 import ron.blog.blog_common.utils.IdGenerator;
 import ron.blog.blog_dao.dao.user.BlogUserBaseDao;
 import ron.blog.blog_dao.dao.user.BlogVerifyCodeDao;
@@ -64,6 +65,9 @@ public class UserBaseService implements UserBaseFacade {
 		try {
 			String uid = IdGenerator.genUUID();
 			user.setUid(uid);
+			
+			user.setUserLoginPassword(SecurityUtils.encodePassword(user.getUserLoginPassword(), user.getUserEmail()));
+			
 			blogUserBaseDao.insert(user);
 			return new Resp(ResCode.SUCCESS, "");
 		} catch (Exception e) {

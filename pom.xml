@@ -30,6 +30,7 @@
 		<java_mail_version>1.4.7</java_mail_version>
 		<commons_email_version>1.4</commons_email_version>
 		<hibernate_validator_version>6.0.2.Final</hibernate_validator_version>
+		<commons_codec_version>1.10</commons_codec_version>
 	</properties>
 
 	<modules>
@@ -209,11 +210,17 @@
 		<!-- LOGGING end -->
 		<!-- hibernate验证引擎依赖start -->
 		<dependency>
-		    <groupId>org.hibernate</groupId>
-		    <artifactId>hibernate-validator</artifactId>
-		    <version>${hibernate_validator_version}</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>${hibernate_validator_version}</version>
 		</dependency>
 		<!-- hibernate验证引擎依赖end -->
+		<!-- commons-codec -->
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>${commons_codec_version}</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

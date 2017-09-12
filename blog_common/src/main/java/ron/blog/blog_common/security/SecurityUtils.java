@@ -1,13 +1,21 @@
 package ron.blog.blog_common.security;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.commons.codec.digest.DigestUtils;
+import org.springframework.util.StringUtils;
 
 public class SecurityUtils {
-	private static Logger logger = LogManager.getLogger(SecurityUtils.class);
 	
-	private static final String ENCODEING = "UTF-8";
-	private static final String ALGORITHM = "AES";//加密算法
-	
-	
+	/**
+	 * @Comment SHA1加密密码
+	 * @Author Ron
+	 * @Date 2017年9月12日 下午2:46:31
+	 * @return
+	 */
+	public static String encodePassword(String psw,String salt) {
+		if(StringUtils.isEmpty(psw) || StringUtils.isEmpty(salt)){
+			return null;
+		}else{
+			return DigestUtils.sha1Hex(psw+"@ron"+salt);
+		}
+	}
 }
