@@ -5,3 +5,12 @@
 		<p>Powered by Ron</p>
 	</div>
 </div>
+<script type="text/javascript">
+	$(function(){
+		var winh=$(window).height();
+		var offtop = $(".footer").offset().top;
+		if(winh-offtop-80 > 0){
+			$(".footer").css("margin-top",winh-offtop-80);
+		}
+	});
+</script>

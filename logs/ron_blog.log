@@ -2840,3 +2840,365 @@ Caused by: javax.mail.AuthenticationFailedException: 530 Error: A secure connect
 2017-09-11 18:04:05.514 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==    Updates: 1
 2017-09-11 18:04:05.514 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63292e61]
 2017-09-11 18:04:11.163 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:48] - 用户进入注册页面
+2017-09-13 17:12:03.293 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-13 17:12:05.184 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-13 17:12:05.185 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-13 17:12:05.201 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-13 17:12:05.234 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-13 17:12:05.235 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-13 17:12:05.237 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-13 17:12:05.240 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy35
+2017-09-13 17:12:05.246 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-13 17:12:05.249 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-13 17:12:05.251 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-13 17:12:05.252 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-13 17:12:05.252 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-13 17:12:34.058 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:48] - 用户进入注册页面
+2017-09-13 17:12:49.544 [http-apr-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-13 17:12:49.559 [http-apr-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3500368f] was not registered for synchronization because synchronization is not active
+2017-09-13 17:12:50.210 [http-apr-8080-exec-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-13 17:12:50.221 [http-apr-8080-exec-5] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-13 17:12:50.274 [http-apr-8080-exec-5] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-13 17:12:50.302 [http-apr-8080-exec-5] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-13 17:12:50.308 [http-apr-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3500368f]
+2017-09-13 17:12:50.311 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#getVerifyCode [line:81] - 发送验证码邮件：ron.zheng@tfschange.com
+2017-09-13 17:12:50.314 [http-apr-8080-exec-5] INFO  ron.blog.blog_service.user.VerifyCodeService#insertVerifyCode [line:36] - 验证码为：811519
+2017-09-13 17:12:53.382 [http-apr-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-13 17:12:53.382 [http-apr-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4403cdea] was not registered for synchronization because synchronization is not active
+2017-09-13 17:12:53.383 [http-apr-8080-exec-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-13 17:12:53.384 [http-apr-8080-exec-5] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: insert into blog_verify_code (id, uid, email, verify_code, status, send_time, end_time, type, remarks) values (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2017-09-13 17:12:53.389 [http-apr-8080-exec-5] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: null, 591b4468f8f145f5960136a74facd6e1(String), ron.zheng@tfschange.com(String), 811519(String), 0(Integer), 2017-09-13 17:12:53.38(Timestamp), 2017-09-13 17:17:53.38(Timestamp), 0(Integer), 注册验证码(String)
+2017-09-13 17:12:53.397 [http-apr-8080-exec-5] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==    Updates: 1
+2017-09-13 17:12:53.397 [http-apr-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4403cdea]
+2017-09-13 17:13:41.788 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-13 17:13:41.789 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e2b10ea] was not registered for synchronization because synchronization is not active
+2017-09-13 17:13:41.791 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-13 17:13:41.792 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: select id, email, verify_code, status, send_time, end_time, type, remarks from blog_verify_code where uid = ? 
+2017-09-13 17:13:41.793 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: 591b4468f8f145f5960136a74facd6e1(String)
+2017-09-13 17:13:41.797 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-13 17:13:41.798 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e2b10ea]
+2017-09-13 17:13:41.799 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-13 17:13:41.799 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5db63368] was not registered for synchronization because synchronization is not active
+2017-09-13 17:13:41.801 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-13 17:13:41.801 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: update blog_verify_code set status = ? where uid = ? and email=? 
+2017-09-13 17:13:41.802 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: 1(Integer), 591b4468f8f145f5960136a74facd6e1(String), ron.zheng@tfschange.com(String)
+2017-09-13 17:13:41.807 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==    Updates: 1
+2017-09-13 17:13:41.807 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5db63368]
+2017-09-13 17:13:41.817 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-13 17:13:41.817 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@304bfa02] was not registered for synchronization because synchronization is not active
+2017-09-13 17:13:41.818 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-13 17:13:41.818 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: insert into blog_user_base (uid, user_login_name, user_login_password, user_realy_name, user_email, user_phone, user_position) values (?, ?, ?, ?, ?, ?, ?) 
+2017-09-13 17:13:41.819 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: 80bda1819d4a4619b44750bfc3013183(String), Ron(String), f94873aee769417777e42071f782353445542933(String), null, ron.zheng@tfschange.com(String), null, null
+2017-09-13 17:13:41.822 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==    Updates: 1
+2017-09-13 17:13:41.823 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@304bfa02]
+2017-09-13 17:14:20.431 [http-apr-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-13 17:14:20.434 [http-apr-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57144482] was not registered for synchronization because synchronization is not active
+2017-09-13 17:14:20.443 [http-apr-8080-exec-8] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-13 17:14:20.446 [http-apr-8080-exec-8] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: select id, email, verify_code, status, send_time, end_time, type, remarks from blog_verify_code where uid = ? 
+2017-09-13 17:14:20.450 [http-apr-8080-exec-8] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: 591b4468f8f145f5960136a74facd6e1(String)
+2017-09-13 17:14:20.457 [http-apr-8080-exec-8] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-13 17:14:20.459 [http-apr-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57144482]
+2017-09-13 17:14:32.439 [http-apr-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-13 17:14:32.440 [http-apr-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51b287bd] was not registered for synchronization because synchronization is not active
+2017-09-13 17:14:32.442 [http-apr-8080-exec-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-13 17:14:32.443 [http-apr-8080-exec-2] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-13 17:14:32.444 [http-apr-8080-exec-2] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-13 17:14:32.447 [http-apr-8080-exec-2] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-13 17:14:32.448 [http-apr-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51b287bd]
+2017-09-13 17:14:33.687 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-13 17:14:33.688 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@dc51338] was not registered for synchronization because synchronization is not active
+2017-09-13 17:14:33.690 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-13 17:14:33.691 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-13 17:14:33.691 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-13 17:14:33.694 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-13 17:14:33.695 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@dc51338]
+2017-09-13 17:14:34.196 [http-apr-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-13 17:14:34.197 [http-apr-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a4d82cf] was not registered for synchronization because synchronization is not active
+2017-09-13 17:14:34.199 [http-apr-8080-exec-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-13 17:14:34.200 [http-apr-8080-exec-5] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT COUNT(*) FROM blog_user_base WHERE user_email=? 
+2017-09-13 17:14:34.201 [http-apr-8080-exec-5] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String)
+2017-09-13 17:14:34.204 [http-apr-8080-exec-5] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-13 17:14:34.205 [http-apr-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a4d82cf]
+2017-09-13 17:14:38.199 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:14:41.427 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:48] - 用户进入注册页面
+2017-09-13 17:14:44.775 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:14:47.943 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:14:51.938 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:14:52.632 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:14:53.168 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:14:53.551 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:14:53.951 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:15:27.900 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:15:47.706 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:15:52.159 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:15:52.713 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:15:52.878 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:18:21.105 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:22:41.390 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:22:43.630 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:23:13.936 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:23:28.001 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:23:32.662 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:23:35.443 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:24:40.946 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:25:27.868 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:25:35.567 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:25:39.673 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:48] - 用户进入注册页面
+2017-09-13 17:25:42.203 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:25:52.391 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:48] - 用户进入注册页面
+2017-09-13 17:25:53.735 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:25:59.416 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:26:00.544 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:26:02.998 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-13 17:26:10.809 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:48] - 用户进入注册页面
+2017-09-13 17:26:11.952 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-14 10:19:32.620 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-14 10:19:34.429 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-14 10:19:34.442 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-14 10:19:34.444 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-14 10:19:34.482 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-14 10:19:34.482 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-14 10:19:34.482 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-14 10:19:34.498 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy35
+2017-09-14 10:19:34.498 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-14 10:19:34.498 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-14 10:19:34.498 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-14 10:19:34.513 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-14 10:19:34.513 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-14 10:20:24.249 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:20:27.662 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:20:34.105 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:20:49.006 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:20:53.164 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-14 10:20:56.095 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:21:17.639 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:21:19.884 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:21:25.919 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:21:59.541 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:23:53.040 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:23:54.869 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:24:03.480 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:24:33.225 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:25:02.742 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:25:44.088 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:27:20.888 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:28:25.147 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:29:36.778 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:31:16.956 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:31:49.849 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:34:07.690 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:35:11.392 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:36:03.418 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:36:24.149 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:36:58.281 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:39:53.193 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:41:03.185 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:41:25.388 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:43:13.539 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:43:31.874 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:43:37.303 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:43:42.803 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:44:13.573 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-14 10:44:17.734 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:44:42.755 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:45:12.857 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:45:28.301 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:46:05.953 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:46:11.631 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:46:12.237 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:46:12.431 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:46:12.601 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:46:12.740 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:46:15.151 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-14 10:46:17.142 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-14 10:46:19.446 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:46:29.871 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:46:38.238 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:47:33.585 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:47:38.765 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:47:46.981 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:48:32.745 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:48:52.350 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:49:30.236 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:50:01.697 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:50:17.023 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:50:33.281 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:51:01.539 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:51:40.783 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:51:57.518 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:52:17.822 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:54:04.604 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:54:12.558 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:54:18.398 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:57:06.192 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:57:22.518 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:57:23.780 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:58:35.617 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:58:38.493 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 10:58:40.822 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:00:10.370 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:01:17.282 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:01:20.284 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:01:56.016 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:01:57.597 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:03:35.626 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:03:36.132 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:04:51.721 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:04:52.316 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:05:32.789 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:07:44.202 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:08:01.910 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:09:25.774 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:44:09.471 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-14 11:44:10.874 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-14 11:44:10.883 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-14 11:44:10.901 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-14 11:44:10.932 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-14 11:44:10.932 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-14 11:44:10.932 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-14 11:44:10.932 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy35
+2017-09-14 11:44:10.951 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-14 11:44:10.954 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-14 11:44:10.956 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-14 11:44:10.957 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-14 11:44:10.957 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-14 11:44:29.325 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:45:21.389 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:47:59.941 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:48:02.727 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:48:10.936 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-14 11:48:14.394 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-14 11:48:17.136 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-14 11:48:18.264 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:60] - 用户进入注册页面
+2017-09-14 11:48:20.479 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:48] - 用户进入注册页面
+2017-09-14 11:48:29.674 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:50:08.112 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 11:51:49.093 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 12:03:25.437 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 14:29:43.084 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:37] - 进入留言页面
+2017-09-14 17:46:28.255 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-14 17:46:29.791 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-14 17:46:29.795 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-14 17:46:29.812 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-14 17:46:29.844 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-14 17:46:29.844 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-14 17:46:29.844 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-14 17:46:29.844 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy36
+2017-09-14 17:46:29.844 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-14 17:46:29.844 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-14 17:46:29.859 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-14 17:46:29.859 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-14 17:46:29.859 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-14 17:47:12.648 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:44] - 进入留言页面
+2017-09-14 17:47:46.831 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:44] - 进入留言页面
+2017-09-14 17:47:48.182 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:44] - 进入留言页面
+2017-09-14 17:47:49.638 [http-apr-8080-exec-3] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator#getResourceBundle [line:128] - ValidationMessages not found.
+2017-09-14 17:47:49.654 [http-apr-8080-exec-3] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator#getResourceBundle [line:128] - ContributorValidationMessages not found.
+2017-09-14 17:47:49.674 [http-apr-8080-exec-3] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator#getResourceBundle [line:125] - org.hibernate.validator.ValidationMessages found.
+2017-09-14 17:49:47.097 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-14 17:49:48.629 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-14 17:49:48.642 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-14 17:49:48.643 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-14 17:49:48.682 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-14 17:49:48.698 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-14 17:49:48.698 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-14 17:49:48.698 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy36
+2017-09-14 17:49:48.714 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-14 17:49:48.714 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-14 17:49:48.714 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-14 17:49:48.714 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-14 17:49:48.714 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-14 17:50:01.088 [http-apr-8080-exec-4] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator#getResourceBundle [line:128] - ValidationMessages not found.
+2017-09-14 17:50:01.088 [http-apr-8080-exec-4] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator#getResourceBundle [line:128] - ContributorValidationMessages not found.
+2017-09-14 17:50:01.103 [http-apr-8080-exec-4] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator#getResourceBundle [line:125] - org.hibernate.validator.ValidationMessages found.
+2017-09-14 17:50:24.912 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:45] - 进入留言页面
+2017-09-14 17:50:29.213 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:45] - 进入留言页面
+2017-09-14 17:52:24.938 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-14 17:52:26.807 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-14 17:52:26.810 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-14 17:52:26.844 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-14 17:52:26.892 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-14 17:52:26.892 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-14 17:52:26.892 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-14 17:52:26.892 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy36
+2017-09-14 17:52:26.907 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-14 17:52:26.907 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-14 17:52:26.907 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-14 17:52:26.907 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-14 17:52:26.907 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-14 17:52:35.257 [http-apr-8080-exec-4] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator#getResourceBundle [line:128] - ValidationMessages not found.
+2017-09-14 17:52:35.273 [http-apr-8080-exec-4] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator#getResourceBundle [line:128] - ContributorValidationMessages not found.
+2017-09-14 17:52:35.273 [http-apr-8080-exec-4] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator#getResourceBundle [line:125] - org.hibernate.validator.ValidationMessages found.
+2017-09-14 17:53:54.562 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-14 17:53:56.103 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-14 17:53:56.108 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-14 17:53:56.126 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-14 17:53:56.157 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-14 17:53:56.173 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-14 17:53:56.173 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-14 17:53:56.173 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy36
+2017-09-14 17:53:56.173 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-14 17:53:56.173 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-14 17:53:56.190 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-14 17:53:56.190 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-14 17:53:56.191 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-14 17:54:10.378 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-14 17:54:10.401 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7fde70c9] was not registered for synchronization because synchronization is not active
+2017-09-14 17:54:10.888 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-14 17:54:10.897 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: insert into blog_user_messages (id, uid, title, content, crt_time, ip, status) values (?, ?, ?, ?, ?, ?, ?) 
+2017-09-14 17:54:10.934 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: null, 3851bde9421f4794be19f005b2a5a458(String), &lt;script&gt;alert(&quot;aaaaaa&quot;)&lt;/script&gt;(String), <p>&lt;script&gt;alert("aaaaaa")&lt;/script&gt;</p>(String), 2017-09-14 17:54:10.362(Timestamp), 127.0.0.1(String), 0(Integer)
+2017-09-14 17:54:10.943 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==    Updates: 1
+2017-09-14 17:54:10.944 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7fde70c9]
+2017-09-14 17:54:42.767 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:45] - 进入留言页面
+2017-09-14 17:57:59.985 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:45] - 进入留言页面
+2017-09-14 17:58:04.699 [http-apr-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-14 17:58:04.700 [http-apr-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c16ee7] was not registered for synchronization because synchronization is not active
+2017-09-14 17:58:04.702 [http-apr-8080-exec-8] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-14 17:58:04.702 [http-apr-8080-exec-8] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: insert into blog_user_messages (id, uid, title, content, crt_time, ip, status) values (?, ?, ?, ?, ?, ?, ?) 
+2017-09-14 17:58:04.704 [http-apr-8080-exec-8] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: null, 028322481f344fe5aabd857529ea41d9(String), aaa(String), aaaa(String), 2017-09-14 17:58:04.699(Timestamp), 127.0.0.1(String), 0(Integer)
+2017-09-14 17:58:04.708 [http-apr-8080-exec-8] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==    Updates: 1
+2017-09-14 17:58:04.709 [http-apr-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c16ee7]
+2017-09-14 17:59:02.284 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:45] - 进入留言页面
+2017-09-14 17:59:06.596 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-14 17:59:06.597 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@742f8153] was not registered for synchronization because synchronization is not active
+2017-09-14 17:59:06.598 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-14 17:59:06.598 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: insert into blog_user_messages (id, uid, title, content, crt_time, ip, status) values (?, ?, ?, ?, ?, ?, ?) 
+2017-09-14 17:59:06.599 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: null, 566ff81c3afd458bbe9798a226a92a10(String), aaaa(String), aaaa(String), 2017-09-14 17:59:06.596(Timestamp), 127.0.0.1(String), 0(Integer)
+2017-09-14 17:59:06.604 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==    Updates: 1
+2017-09-14 17:59:06.605 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@742f8153]
+2017-09-14 17:59:06.620 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:45] - 进入留言页面
+2017-09-14 18:01:49.500 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:45] - 进入留言页面
+2017-09-14 18:01:52.786 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-14 18:01:52.787 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@179acaab] was not registered for synchronization because synchronization is not active
+2017-09-14 18:01:52.789 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-14 18:01:52.789 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: insert into blog_user_messages (id, uid, title, content, crt_time, ip, status) values (?, ?, ?, ?, ?, ?, ?) 
+2017-09-14 18:01:52.790 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: null, b2f55d64d1084fb2ad0129af9357d10a(String), aaa(String), aaa(String), 2017-09-14 18:01:52.786(Timestamp), 127.0.0.1(String), 0(Integer)
+2017-09-14 18:01:52.798 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==    Updates: 1
+2017-09-14 18:01:52.799 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@179acaab]
+2017-09-14 18:01:53.767 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:45] - 进入留言页面
+2017-09-14 18:01:59.478 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-14 18:01:59.479 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40f9be1b] was not registered for synchronization because synchronization is not active
+2017-09-14 18:01:59.480 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-14 18:01:59.480 [http-apr-8080-exec-6] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: insert into blog_user_messages (id, uid, title, content, crt_time, ip, status) values (?, ?, ?, ?, ?, ?, ?) 
+2017-09-14 18:01:59.481 [http-apr-8080-exec-6] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: null, 6465cc9c6a1643fd8a186ae39f564261(String), aa(String), aa(String), 2017-09-14 18:01:59.478(Timestamp), 127.0.0.1(String), 0(Integer)
+2017-09-14 18:01:59.486 [http-apr-8080-exec-6] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==    Updates: 1
+2017-09-14 18:01:59.486 [http-apr-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40f9be1b]
+2017-09-14 18:02:21.403 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:45] - 进入留言页面
+2017-09-14 18:02:25.748 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-14 18:02:25.749 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79957581] was not registered for synchronization because synchronization is not active
+2017-09-14 18:02:25.751 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-14 18:02:25.752 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: insert into blog_user_messages (id, uid, title, content, crt_time, ip, status) values (?, ?, ?, ?, ?, ?, ?) 
+2017-09-14 18:02:25.754 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: null, 93507e1e14f44c28b3390a54c4e67b6e(String), aaa(String), aaaaa(String), 2017-09-14 18:02:25.748(Timestamp), 127.0.0.1(String), 0(Integer)
+2017-09-14 18:02:25.759 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==    Updates: 1
+2017-09-14 18:02:25.760 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79957581]
+2017-09-14 18:02:33.755 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:45] - 进入留言页面
+2017-09-14 18:03:39.358 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:45] - 进入留言页面
+2017-09-14 18:03:43.387 [http-apr-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-14 18:03:43.387 [http-apr-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1365a377] was not registered for synchronization because synchronization is not active
+2017-09-14 18:03:43.388 [http-apr-8080-exec-7] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-14 18:03:43.389 [http-apr-8080-exec-7] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: insert into blog_user_messages (id, uid, title, content, crt_time, ip, status) values (?, ?, ?, ?, ?, ?, ?) 
+2017-09-14 18:03:43.390 [http-apr-8080-exec-7] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: null, 33a12ee638ad493a9616372676d2da6c(String), 111(String), 111(String), 2017-09-14 18:03:43.387(Timestamp), 127.0.0.1(String), 0(Integer)
+2017-09-14 18:03:43.393 [http-apr-8080-exec-7] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==    Updates: 1
+2017-09-14 18:03:43.393 [http-apr-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1365a377]
+2017-09-14 18:03:44.599 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:45] - 进入留言页面
+2017-09-14 18:22:09.099 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:45] - 进入留言页面

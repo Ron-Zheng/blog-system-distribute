@@ -18,7 +18,7 @@
 			<div class="ui-responsive-center">
 				<form class="layui-form" action="" id="register-form">
 					<div class="layui-form-item">
-					    <label class="layui-form-label">登录名称</label>
+					    <label class="layui-form-label">用户名称</label>
 					    <div class="layui-input-block">
 					      <input type="text" name="userLoginName" lay-verify="required" autocomplete="off" placeholder="请输入登录名称" class="layui-input">
 					    </div>
@@ -86,8 +86,8 @@
 					switch(data.resCode){
 					case '00':
 						//注册成功
-						//location.href=$("base").attr("href")+"user/login";
-						layer.msg(i18nMsg('common.msg.success'), {icon: 1});
+						location.href=$("base").attr("href")+"user/login";
+						//layer.msg(i18nMsg('common.msg.success'), {icon: 1});
 						break;
 					case '03':{
 						//验证失败

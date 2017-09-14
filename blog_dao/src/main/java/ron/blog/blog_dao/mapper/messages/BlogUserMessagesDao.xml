@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="ron.blog.blog_dao.dao.messages.BlogUserMessagesDao" >
+  <resultMap id="BaseResultMap" type="ron.blog.blog_domain.messages.BlogUserMessages" >
+    <id column="id" property="id" />
+    <id column="uid" property="uid" />
+    <result column="title" property="title" />
+    <result column="content" property="content" />
+    <result column="crt_time" property="crtTime" />
+    <result column="ip" property="ip" />
+    <result column="status" property="status" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, uid, title, content, crt_time, ip, status
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from blog_user_messages
+    where uid = #{uid}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from blog_user_messages
+    where uid = #{uid}
+  </delete>
+  <insert id="insert" parameterType="ron.blog.blog_domain.messages.BlogUserMessages" >
+    insert into blog_user_messages (id, uid, title, 
+      content, crt_time, ip, 
+      status)
+    values (#{id}, #{uid}, #{title}, 
+      #{content}, #{crtTime}, #{ip}, 
+      #{status})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="java.lang.String" >
+    update blog_user_messages
+    set title = #{title},
+      content = #{content},
+      crt_time = #{crtTime},
+      ip = #{ip},
+      status = #{status}
+    where uid = #{uid}
+  </update>
+</mapper>

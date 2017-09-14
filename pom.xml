@@ -31,6 +31,7 @@
 		<commons_email_version>1.4</commons_email_version>
 		<hibernate_validator_version>6.0.2.Final</hibernate_validator_version>
 		<commons_codec_version>1.10</commons_codec_version>
+		<common_lang3_version>3.5</common_lang3_version>
 	</properties>
 
 	<modules>
@@ -220,6 +221,11 @@
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
 			<version>${commons_codec_version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${common_lang3_version}</version>
 		</dependency>
 	</dependencies>
 	<build>

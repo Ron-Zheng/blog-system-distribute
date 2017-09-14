@@ -50,6 +50,18 @@ public class UserController extends BaseController {
 	}
 	
 	/**
+	 * @Comment 登录页面
+	 * @Author Ron
+	 * @Date 2017年9月13日 下午5:06:29
+	 * @return
+	 */
+	@RequestMapping(value="/login",method=RequestMethod.GET)
+	public String login(HttpServletRequest request){
+		logger.info("用户进入注册页面");
+		return "user/login";
+	}
+	
+	/**
 	 * @Comment 获取验证码
 	 * @Author Ron
 	 * @Date 2017年8月31日 下午5:23:25

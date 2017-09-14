@@ -10,7 +10,7 @@
 		    <a href="">关于Ron<span class="layui-badge-dot"></span></a>
 		  </li>
 		  <li class="layui-nav-item">
-		    <a href="">留言</a>
+		    <a href="msg/send">留言</a>
 		  </li>
 		  <li class="layui-nav-item">
 		    <a href="">

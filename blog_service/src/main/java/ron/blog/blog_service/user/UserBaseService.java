@@ -10,7 +10,6 @@ import ron.blog.blog_common.resp.Resp;
 import ron.blog.blog_common.security.SecurityUtils;
 import ron.blog.blog_common.utils.IdGenerator;
 import ron.blog.blog_dao.dao.user.BlogUserBaseDao;
-import ron.blog.blog_dao.dao.user.BlogVerifyCodeDao;
 import ron.blog.blog_domain.user.BlogUserBase;
 import ron.blog.blog_facade.user.UserBaseFacade;
 
