@@ -13,7 +13,7 @@
 	</sql>
 	
 	<select id="login" parameterType="map" resultMap="userBaseResultMap">
-		SELECT * FROM blog_user_base WHERE user_login_name=#{userLoginName} AND user_login_password=#{userLoginPassword}
+		SELECT * FROM blog_user_base WHERE user_email=#{userEmail} AND user_login_password=#{userLoginPassword}
 	</select>
 	
 	<select id="checkEmail" parameterType="java.lang.String" resultType="java.lang.Integer">

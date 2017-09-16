@@ -34,8 +34,13 @@ public class UserBaseService implements UserBaseFacade {
 	 */
 	@Override
 	public Resp login(BlogUserBase user) {
-		user = blogUserBaseDao.login(user.getUserLoginName(), user.getUserLoginPassword());
-		return new Resp(ResCode.SUCCESS,"Hello"+user.getUserEmail());
+		user.setUserLoginPassword(SecurityUtils.encodePassword(user.getUserLoginPassword(), user.getUserEmail()));
+		user = blogUserBaseDao.login(user.getUserEmail(), user.getUserLoginPassword());
+		if(user != null){
+			return new Resp(ResCode.SUCCESS, user);
+		}else{
+			return new Resp(ResCode.USER_INFO_ERROR,"");
+		}
 	}
 	
 	/**

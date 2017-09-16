@@ -32,6 +32,10 @@
 		<hibernate_validator_version>6.0.2.Final</hibernate_validator_version>
 		<commons_codec_version>1.10</commons_codec_version>
 		<common_lang3_version>3.5</common_lang3_version>
+		<opensymphony_version>2.4.2</opensymphony_version>
+		<sitemesh_version>3.0.1</sitemesh_version>
+		<spring_session_data_redis_version>1.2.2.RELEASE</spring_session_data_redis_version>
+		<redis_clients_version>2.9.0</redis_clients_version>
 	</properties>
 
 	<modules>

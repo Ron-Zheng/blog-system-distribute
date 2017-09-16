@@ -1,10 +1,19 @@
 package ron.blog.blog_domain.user;
 
+import java.io.Serializable;
+
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import org.hibernate.validator.constraints.Length;
 
-public class BlogUserBase {
+public class BlogUserBase implements Serializable {
+	/**
+	 * @Comment 
+	 * @Author Ron
+	 * @Date 2017年9月16日 下午5:01:07
+	 */
+	private static final long serialVersionUID = 1L;
+
 	private Integer id;
 	
 	private String uid;

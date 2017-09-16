@@ -3202,3 +3202,292 @@ Caused by: javax.mail.AuthenticationFailedException: 530 Error: A secure connect
 2017-09-14 18:03:43.393 [http-apr-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1365a377]
 2017-09-14 18:03:44.599 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:45] - 进入留言页面
 2017-09-14 18:22:09.099 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:45] - 进入留言页面
+2017-09-15 18:18:09.912 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-15 18:18:11.713 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-15 18:18:11.715 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-15 18:18:11.741 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-15 18:18:11.786 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-15 18:18:11.788 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-15 18:18:11.790 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-15 18:18:11.794 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy36
+2017-09-15 18:18:11.800 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-15 18:18:11.804 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-15 18:18:11.806 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-15 18:18:11.807 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-15 18:18:11.808 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-15 18:18:37.134 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:51] - 用户进入注册页面
+2017-09-15 18:18:39.091 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:20:00.304 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-15 18:20:02.139 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-15 18:20:02.141 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-15 18:20:02.174 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-15 18:20:02.217 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-15 18:20:02.219 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-15 18:20:02.221 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-15 18:20:02.224 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy36
+2017-09-15 18:20:02.230 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-15 18:20:02.233 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-15 18:20:02.235 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-15 18:20:02.236 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-15 18:20:02.237 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-15 18:20:23.532 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:20:44.771 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:22:11.176 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:23:01.036 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-15 18:23:02.921 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-15 18:23:02.923 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-15 18:23:02.951 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-15 18:23:02.985 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-15 18:23:02.986 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-15 18:23:02.987 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-15 18:23:02.989 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy36
+2017-09-15 18:23:02.996 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-15 18:23:02.998 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-15 18:23:03.000 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-15 18:23:03.000 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-15 18:23:03.001 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-15 18:23:04.688 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:23:50.781 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-15 18:23:52.404 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-15 18:23:52.405 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-15 18:23:52.424 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-15 18:23:52.453 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-15 18:23:52.454 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-15 18:23:52.455 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-15 18:23:52.457 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy36
+2017-09-15 18:23:52.463 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-15 18:23:52.466 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-15 18:23:52.468 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-15 18:23:52.468 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-15 18:23:52.469 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-15 18:24:02.016 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:16.098 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:33.329 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:35.416 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:44.490 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:52.861 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:55.131 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:55.627 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:56.074 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:56.458 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:56.914 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:57.337 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:57.691 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:58.061 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:58.427 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:58.629 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:58.814 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:58.980 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:59.147 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:59.307 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:59.484 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:59.657 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:59.818 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:24:59.972 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:02.668 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:03.242 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:03.763 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:03.939 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:04.107 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:04.291 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:04.474 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:04.651 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:04.818 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:04.995 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:05.163 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:05.325 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:05.500 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:05.674 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:05.850 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:06.025 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:06.192 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:06.376 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:06.561 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:06.729 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:06.906 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:07.081 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:07.281 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:07.883 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:08.363 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:08.810 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:09.330 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:09.810 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:10.387 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:14.230 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:16.313 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:19.811 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-15 18:25:22.345 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 15:51:39.963 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-16 15:56:33.822 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-16 15:57:27.170 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-16 16:03:57.551 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-16 16:07:21.043 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-16 16:07:22.995 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-16 16:07:22.996 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-16 16:07:23.012 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-16 16:07:23.043 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-16 16:07:23.044 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-16 16:07:23.045 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-16 16:07:23.048 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy48
+2017-09-16 16:07:23.056 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-16 16:07:23.061 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-16 16:07:23.064 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-16 16:07:23.065 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-16 16:07:23.066 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-16 16:07:45.625 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:11:48.733 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:13:34.370 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:13:35.348 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:13:35.685 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:13:35.965 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:15:13.903 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-16 16:15:16.019 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-16 16:15:16.021 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-16 16:15:16.043 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-16 16:15:16.093 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-16 16:15:16.096 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-16 16:15:16.098 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-16 16:15:16.101 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy48
+2017-09-16 16:15:16.110 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-16 16:15:16.115 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-16 16:15:16.117 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-16 16:15:16.118 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-16 16:15:16.119 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-16 16:15:29.583 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:17:16.560 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-16 16:17:18.467 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-16 16:17:18.469 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-16 16:17:18.487 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-16 16:17:18.543 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-16 16:17:18.545 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-16 16:17:18.546 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-16 16:17:18.548 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy48
+2017-09-16 16:17:18.554 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-16 16:17:18.558 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-16 16:17:18.561 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-16 16:17:18.561 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-16 16:17:18.562 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-16 16:17:24.774 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:17:25.543 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - wmab
+2017-09-16 16:17:52.953 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:17:53.029 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - 4Wwf
+2017-09-16 16:22:29.482 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:22:29.539 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - J1SK
+2017-09-16 16:24:19.633 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:24:19.673 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - mXRd
+2017-09-16 16:24:27.928 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:24:27.969 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - 78RI
+2017-09-16 16:24:28.660 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:24:28.692 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - 4GvQ
+2017-09-16 16:24:29.096 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:24:29.127 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - 407K
+2017-09-16 16:24:29.559 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:24:29.594 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - 9OD8
+2017-09-16 16:24:29.862 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:24:29.897 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - 3e5P
+2017-09-16 16:24:30.048 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:24:30.089 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - XoUH
+2017-09-16 16:24:30.221 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:24:30.257 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - 3sJv
+2017-09-16 16:24:30.392 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:24:30.422 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - o7Sm
+2017-09-16 16:24:32.302 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:24:32.340 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - 9y0F
+2017-09-16 16:24:41.423 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#register [line:51] - 用户进入注册页面
+2017-09-16 16:24:45.544 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:24:45.581 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - Kpu0
+2017-09-16 16:24:47.623 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:24:47.655 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - qPAy
+2017-09-16 16:31:17.551 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:31:18.795 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - geQD
+2017-09-16 16:31:19.165 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:31:19.195 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - xw4O
+2017-09-16 16:31:20.070 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:31:20.105 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - CqBE
+2017-09-16 16:31:41.745 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入注册页面
+2017-09-16 16:31:41.780 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#getImageVerifyCode [line:142] - FxeP
+2017-09-16 16:56:36.379 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-16 16:56:38.223 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-16 16:56:38.225 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-16 16:56:38.250 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-16 16:56:38.328 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-16 16:56:38.328 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-16 16:56:38.328 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-16 16:56:38.328 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy48
+2017-09-16 16:56:38.343 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-16 16:56:38.343 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-16 16:56:38.343 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-16 16:56:38.343 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-16 16:56:38.343 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-16 16:56:44.668 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入登录页面
+2017-09-16 16:57:00.533 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入登录页面
+2017-09-16 16:57:29.020 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入登录页面
+2017-09-16 16:57:30.952 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入登录页面
+2017-09-16 16:59:19.510 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-16 16:59:21.233 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-16 16:59:21.241 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-16 16:59:21.259 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-16 16:59:21.306 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-16 16:59:21.321 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-16 16:59:21.321 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-16 16:59:21.321 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy48
+2017-09-16 16:59:21.321 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-16 16:59:21.337 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-16 16:59:21.337 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-16 16:59:21.337 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-16 16:59:21.337 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-16 16:59:33.723 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入登录页面
+2017-09-16 16:59:36.608 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入登录页面
+2017-09-16 17:00:15.394 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入登录页面
+2017-09-16 17:00:17.118 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入登录页面
+2017-09-16 17:00:22.118 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-16 17:00:22.127 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78349f5] was not registered for synchronization because synchronization is not active
+2017-09-16 17:00:22.721 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-16 17:00:22.736 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT * FROM blog_user_base WHERE user_email=? AND user_login_password=? 
+2017-09-16 17:00:22.767 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String), f94873aee769417777e42071f782353445542933(String)
+2017-09-16 17:00:22.799 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-16 17:00:22.814 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78349f5]
+2017-09-16 17:01:40.866 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-16 17:01:42.686 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-16 17:01:42.690 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-16 17:01:42.708 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-16 17:01:42.771 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-16 17:01:42.771 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-16 17:01:42.771 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-16 17:01:42.771 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy48
+2017-09-16 17:01:42.771 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-16 17:01:42.786 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-16 17:01:42.786 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-16 17:01:42.786 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-16 17:01:42.786 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-16 17:01:51.049 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入登录页面
+2017-09-16 17:02:01.750 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-16 17:02:01.759 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@586fdefd] was not registered for synchronization because synchronization is not active
+2017-09-16 17:02:02.137 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-16 17:02:02.153 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT * FROM blog_user_base WHERE user_email=? AND user_login_password=? 
+2017-09-16 17:02:02.168 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String), f94873aee769417777e42071f782353445542933(String)
+2017-09-16 17:02:02.200 [http-apr-8080-exec-1] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-16 17:02:02.200 [http-apr-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@586fdefd]
+2017-09-16 17:02:08.566 [http-apr-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-16 17:02:08.567 [http-apr-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@316e7365] was not registered for synchronization because synchronization is not active
+2017-09-16 17:02:08.569 [http-apr-8080-exec-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-16 17:02:08.570 [http-apr-8080-exec-2] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT * FROM blog_user_base WHERE user_email=? AND user_login_password=? 
+2017-09-16 17:02:08.570 [http-apr-8080-exec-2] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String), f94873aee769417777e42071f782353445542933(String)
+2017-09-16 17:02:08.574 [http-apr-8080-exec-2] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-16 17:02:08.574 [http-apr-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@316e7365]
+2017-09-16 17:02:09.462 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-16 17:02:09.463 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@489ec740] was not registered for synchronization because synchronization is not active
+2017-09-16 17:02:09.464 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-16 17:02:09.465 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT * FROM blog_user_base WHERE user_email=? AND user_login_password=? 
+2017-09-16 17:02:09.465 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String), f94873aee769417777e42071f782353445542933(String)
+2017-09-16 17:02:09.468 [http-apr-8080-exec-3] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-16 17:02:09.468 [http-apr-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@489ec740]
+2017-09-16 17:02:09.935 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#getSqlSession [line:99] - Creating a new SqlSession
+2017-09-16 17:02:09.936 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#registerSessionHolder [line:150] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43410b80] was not registered for synchronization because synchronization is not active
+2017-09-16 17:02:09.937 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction#openConnection [line:89] - JDBC Connection [jdbc:mysql://127.0.0.1:3306/ron_intelligence_system?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=Asia/Hong_Kong, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+2017-09-16 17:02:09.938 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==>  Preparing: SELECT * FROM blog_user_base WHERE user_email=? AND user_login_password=? 
+2017-09-16 17:02:09.940 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - ==> Parameters: ron.zheng@tfschange.com(String), f94873aee769417777e42071f782353445542933(String)
+2017-09-16 17:02:09.943 [http-apr-8080-exec-4] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger#debug [line:145] - <==      Total: 1
+2017-09-16 17:02:09.944 [http-apr-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils#closeSqlSession [line:193] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43410b80]
+2017-09-16 17:02:11.208 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入登录页面
+2017-09-16 17:02:13.231 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:63] - 用户进入登录页面

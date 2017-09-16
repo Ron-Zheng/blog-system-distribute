@@ -16,7 +16,7 @@
 			  <legend>请输入您的登录信息</legend>
 			</fieldset>
 			<div class="ui-responsive-center">
-				<form class="layui-form" action="" id="register-form">
+				<form class="layui-form" action="" id="login-form">
 				    <div class="layui-form-item">
 				      <label class="layui-form-label">用户邮箱</label>
 				      <div class="layui-input-block">
@@ -35,11 +35,11 @@
 					    <div class="layui-input-inline">
 					      <input type="text" name="verifyCode" lay-verify="required" placeholder="请输入验证码" autocomplete="off" class="layui-input">
 					    </div>
-					    <button class="layui-btn layui-btn-normal btn-getVerifyCode">获取验证码</button>
+					    <img src="user/getImageVerifyCode">
 					</div>
 					<div class="layui-form-item">
 					    <div class="layui-input-block">
-					      <button class="layui-btn" lay-submit="" lay-filter="register">登录</button>
+					      <button class="layui-btn" lay-submit="" lay-filter="login">登录</button>
 					      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
 					    </div>
 					</div>
@@ -57,5 +57,57 @@
 		</div>
 	</div>
 	<jsp:include page="../include/i18nMsg.jsp"/>
+	<script type="text/javascript">
+	layui.use(['form', 'layedit', 'laydate'], function(){
+		  var form = layui.form
+		  ,layer = layui.layer
+		  ,layedit = layui.layedit
+		  ,laydate = layui.laydate;
+		  
+		  //自定义验证规则
+		  form.verify({
+		    pass: [/(.+){6,12}$/, i18nMsg('common.validate.psw.length')]
+		  });
+		  
+		  //监听提交
+		  form.on('submit(login)', function(data){
+		    $.ajax({
+				type:"POST",
+				url:"user/loginSubmit",
+				data:$("#login-form").serialize(),
+				success: function(data){
+					//layer.msg(data.resCode);
+					switch(data.resCode){
+					case '00':
+						//登录成功
+						layer.msg(i18nMsg('common.msg.success'), {icon: 1});
+						break;
+					case '04':
+						layer.tips(i18nMsg('common.validate.verifycode.error'), "input[name='verifyCode']", {
+							  tipsMore: true
+						}); 
+						break;
+					case '05':
+						layer.tips(i18nMsg('common.validate.verifycode.expired'), "input[name='verifyCode']", {
+							  tipsMore: true
+						});
+						break;
+					case '99':
+						layer.msg(i18nMsg('common.msg.failed'), {icon: 5,anim:6});
+						break;
+					default:
+						layer.msg(i18nMsg('common.msg.failed'), {icon: 5,anim:6});
+						break;
+					}
+				},
+				error:function(msg){
+					layer.msg(i18nMsg('common.msg.failed'), {icon: 5,anim:6});
+				}
+			});
+		    
+		    return false;
+		  });
+		});
+	</script>
 </body>
 </html>

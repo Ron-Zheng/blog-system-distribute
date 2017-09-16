@@ -7,7 +7,8 @@ public enum ResCode {
 	DATA_EXIST("02","数据已经存在"),
 	VALIDATE_FAILED("03","验证失败"),
 	VERIFY_CODE_ERROR("04","验证码错误"),
-	EXPIRED("05","超时");
+	EXPIRED("05","超时"),
+	USER_INFO_ERROR("06","用户不存在");
 	
 	private String code;
 	private String text;

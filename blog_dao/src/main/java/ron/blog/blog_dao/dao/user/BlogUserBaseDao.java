@@ -11,7 +11,7 @@ public interface BlogUserBaseDao {
 	 * @Date 2017年8月23日 下午5:34:56
 	 * @return
 	 */
-	BlogUserBase login(@Param("userLoginName")String userLoginName,@Param("userLoginPassword")String userLoginPassword);
+	BlogUserBase login(@Param("userEmail")String userEmail,@Param("userLoginPassword")String userLoginPassword);
 	
 	/**
 	 * @Comment 检查邮箱是否存在
