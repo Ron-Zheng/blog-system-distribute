@@ -44,7 +44,7 @@
 							</form>
 						</div>
 						<div class="layui-tab-item">留言列表
-							<script>alert('你是不是傻？')</script>
+							<script></script>
 						</div>
 					</div>
 				</div>

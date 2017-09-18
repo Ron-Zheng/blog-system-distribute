@@ -83,7 +83,7 @@ public class ImageVerifyCodeUtils {
     public static void getRandcode(HttpServletRequest request,HttpServletResponse response,String verifyCode) {
     	// BufferedImage类是具有缓冲区的Image类,Image类是用于描述图像信息的类
         BufferedImage image = new BufferedImage(width, height,BufferedImage.TYPE_INT_BGR);
-        // 产生Image对象的Graphics对象,改对象可以在图像上进行各种绘制操作
+        // 产生Image对象的Graphics对象,该对象可以在图像上进行各种绘制操作
         Graphics g = image.getGraphics();
         g.fillRect(0, 0, width, height);
         g.setFont(new Font("Times New Roman", Font.ROMAN_BASELINE, 18));

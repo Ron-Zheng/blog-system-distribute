@@ -35,7 +35,7 @@
 					    <div class="layui-input-inline">
 					      <input type="text" name="verifyCode" lay-verify="required" placeholder="请输入验证码" autocomplete="off" class="layui-input">
 					    </div>
-					    <img src="user/getImageVerifyCode">
+					    <img src="user/getImageVerifyCode" id="img_verifyCode" style="cursor:pointer;">
 					</div>
 					<div class="layui-form-item">
 					    <div class="layui-input-block">
@@ -58,6 +58,15 @@
 	</div>
 	<jsp:include page="../include/i18nMsg.jsp"/>
 	<script type="text/javascript">
+	$(function(){
+		$("#img_verifyCode").click(function(){
+			refreshVerifyCode();
+		});
+	});
+	var refreshVerifyCode=function(){
+		//更新验证码
+		$("#img_verifyCode").attr("src","user/getImageVerifyCode" + "?random=" + Date());
+	};
 	layui.use(['form', 'layedit', 'laydate'], function(){
 		  var form = layui.form
 		  ,layer = layui.layer
@@ -76,7 +85,6 @@
 				url:"user/loginSubmit",
 				data:$("#login-form").serialize(),
 				success: function(data){
-					//layer.msg(data.resCode);
 					switch(data.resCode){
 					case '00':
 						//登录成功
@@ -99,6 +107,7 @@
 						layer.msg(i18nMsg('common.msg.failed'), {icon: 5,anim:6});
 						break;
 					}
+					refreshVerifyCode();
 				},
 				error:function(msg){
 					layer.msg(i18nMsg('common.msg.failed'), {icon: 5,anim:6});
