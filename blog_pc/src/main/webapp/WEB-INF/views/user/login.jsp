@@ -35,7 +35,7 @@
 					    <div class="layui-input-inline">
 					      <input type="text" name="verifyCode" lay-verify="required" placeholder="请输入验证码" autocomplete="off" class="layui-input">
 					    </div>
-					    <img src="user/getImageVerifyCode" id="img_verifyCode" style="cursor:pointer;">
+					    <img src="login/getImageVerifyCode" id="img_verifyCode" style="cursor:pointer;">
 					</div>
 					<div class="layui-form-item">
 					    <div class="layui-input-block">
@@ -65,7 +65,7 @@
 	});
 	var refreshVerifyCode=function(){
 		//更新验证码
-		$("#img_verifyCode").attr("src","user/getImageVerifyCode" + "?random=" + Date());
+		$("#img_verifyCode").attr("src","login/getImageVerifyCode" + "?random=" + Date());
 	};
 	layui.use(['form', 'layedit', 'laydate'], function(){
 		  var form = layui.form
@@ -82,13 +82,14 @@
 		  form.on('submit(login)', function(data){
 		    $.ajax({
 				type:"POST",
-				url:"user/loginSubmit",
+				url:"login/loginSubmit",
 				data:$("#login-form").serialize(),
 				success: function(data){
 					switch(data.resCode){
 					case '00':
 						//登录成功
-						layer.msg(i18nMsg('common.msg.success'), {icon: 1});
+						//layer.msg(i18nMsg('common.msg.success'), {icon: 1});
+						location.href=$("base").attr("href")+"user/usercenter";
 						break;
 					case '04':
 						layer.tips(i18nMsg('common.validate.verifycode.error'), "input[name='verifyCode']", {

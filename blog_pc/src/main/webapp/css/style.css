@@ -270,6 +270,13 @@ body {
 .blog-comment .info span {
     padding-right: 5px;
 }
+.fly-user-main{
+	margin-left:1%;
+	background-color:#fff;
+}
+.fly-user-main .layui-tab{
+	margin:0px;
+}
 .footer{
 	padding: 15px 0;
     line-height: 24px;

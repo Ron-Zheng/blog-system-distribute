@@ -17,6 +17,21 @@
     <!-- 视图解析器 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:viewClass="org.springframework.web.servlet.view.JstlView"
 		p:prefix="/WEB-INF/views/" p:suffix=".jsp" />
+	
+	<!-- 拦截器配置 -->	
+	<mvc:interceptors>
+		<!-- 性能监控拦截器 -->
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor" />
+		</mvc:interceptor>
+		
+		<!-- 用户登录拦截器 -->
+		<mvc:interceptor>
+			<mvc:mapping path="/user/**" />
+			<bean class="ron.blog.blog_pc.interceptor.UserAccessInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
 		
 	<!-- rest json related... start -->
     <bean id="mappingJacksonHttpMessageConverter"

@@ -19,8 +19,8 @@
 		    	<span class="layui-nav-more"></span>
 		    </a>
 		    <dl class="layui-nav-child">
-		      <dd><a href="user/login">登录</a></dd>
-		      <dd><a href="user/register">注册</a></dd>
+		      <dd><a href="login">登录</a></dd>
+		      <dd><a href="register">注册</a></dd>
 		    </dl>
 		  </li>
 		</ul>

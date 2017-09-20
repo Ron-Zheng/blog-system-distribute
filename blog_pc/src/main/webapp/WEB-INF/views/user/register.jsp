@@ -79,14 +79,14 @@
 		  form.on('submit(register)', function(data){
 		    $.ajax({
 				type:"POST",
-				url:"user/submitRegister",
+				url:"register/submitRegister",
 				data:$("#register-form").serialize(),
 				success: function(data){
 					//layer.msg(data.resCode);
 					switch(data.resCode){
 					case '00':
 						//注册成功
-						location.href=$("base").attr("href")+"user/login";
+						location.href=$("base").attr("href")+"login";
 						//layer.msg(i18nMsg('common.msg.success'), {icon: 1});
 						break;
 					case '03':{
@@ -146,7 +146,7 @@
 						//发送邮件获取验证码
 						$.ajax({
 							type:"POST",
-							url:"user/getVerifyCode",
+							url:"register/getVerifyCode",
 							data:json,
 							dataType: "json",
 							success: function(data){
