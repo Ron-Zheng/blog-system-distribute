@@ -1,4 +1,4 @@
-package ron.blog.blog_service.user;
+package ron.blog.blog_user_service.user;
 
 import java.util.Date;
 
@@ -14,9 +14,9 @@ import ron.blog.blog_common.utils.IdGenerator;
 import ron.blog.blog_dao.dao.user.BlogVerifyCodeDao;
 import ron.blog.blog_domain.user.BlogVerifyCode;
 import ron.blog.blog_facade.user.VerifyCodeFacade;
-import ron.blog.blog_service.utils.MailSender;
+import ron.blog.blog_user_service.utils.MailSender;
 
-@Component
+@Component("verifyCodeService")
 public class VerifyCodeService implements VerifyCodeFacade {
 
 	private Logger logger=LogManager.getLogger(this.getClass());

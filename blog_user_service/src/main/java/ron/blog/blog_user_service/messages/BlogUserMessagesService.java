@@ -1,4 +1,4 @@
-package ron.blog.blog_service.messages;
+package ron.blog.blog_user_service.messages;
 
 import java.util.Date;
 
@@ -11,7 +11,7 @@ import ron.blog.blog_dao.dao.messages.BlogUserMessagesDao;
 import ron.blog.blog_domain.messages.BlogUserMessages;
 import ron.blog.blog_facade.messages.BlogUserMessagesFacade;
 
-@Component
+@Component("blogUserMessagesService")
 public class BlogUserMessagesService implements BlogUserMessagesFacade {
 
 	@Autowired

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+xsi:schemaLocation="http://www.springframework.org/schema/beans       
+    http://www.springframework.org/schema/beans/spring-beans.xsd       
+    http://code.alibabatech.com/schema/dubbo        
+    http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+    
+    <dubbo:application name="blog-user-service" logger="log4j"/>
+		
+	<dubbo:registry protocol="zookeeper" address="${registry.address}"/>	
+	
+	<dubbo:monitor protocol="registry"></dubbo:monitor>
+		
+	<dubbo:protocol name="dubbo" port="20881" />
+	
+	<dubbo:provider timeout="30000" loadbalance="random" >
+		<dubbo:parameter key="shutdown.timeout" value="60000" />
+		<dubbo:parameter key="shutdown.hook"    value="true" />
+		<dubbo:parameter key="retries"    		value="0" />
+	</dubbo:provider>
+	
+	<!-- 声明需要暴露的服务 -->
+	<dubbo:service interface="ron.blog.blog_facade.user.UserBaseFacade" ref="userService"/>
+	
+	<dubbo:service interface="ron.blog.blog_facade.user.VerifyCodeFacade" ref="verifyCodeService"/>
+	
+	<dubbo:service interface="ron.blog.blog_facade.messages.BlogUserMessagesFacade" ref="blogUserMessagesService" />
+</beans>

@@ -36,6 +36,8 @@
 		<sitemesh_version>3.0.1</sitemesh_version>
 		<spring_session_data_redis_version>1.2.2.RELEASE</spring_session_data_redis_version>
 		<redis_clients_version>2.9.0</redis_clients_version>
+		<dubbo_version>2.5.5</dubbo_version>
+		<zkclient_version>0.10</zkclient_version>
 	</properties>
 
 	<modules>
@@ -46,6 +48,7 @@
 		<module>blog_facade</module>
 		<module>blog_common</module>
 		<module>blog_api</module>
+		<module>blog_user_service</module>
 	</modules>
 
 	<dependencies>

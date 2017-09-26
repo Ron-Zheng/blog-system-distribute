@@ -18,10 +18,16 @@
 
 	<!-- 配置要扫描的包 -->
 	<context:component-scan base-package="ron.blog" />
+	
+	<!-- 配置文件配置 -->
+    <context:property-placeholder location="classpath:mybatis/jdbc.properties,classpath:config.properties" />
     
     <!-- proxy-target-class默认"false",更改为"ture"使用CGLib动态代理 -->
 	<aop:aspectj-autoproxy proxy-target-class="true" />	
 	
-	<!-- 导入dubbo消费者配置 -->
-	<import resource="classpath:dubbo/dubbo_consumer.xml" />
+	<!-- 导入Mybatis配置 -->
+	<import resource="classpath:mybatis/spring-mybatis.xml" />
+	
+	<!-- 导入dubbo配置 -->
+	<import resource="classpath:dubbo/dubbo.xml" />
 </beans>

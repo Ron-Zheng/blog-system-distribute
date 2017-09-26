@@ -1,4 +1,4 @@
-package ron.blog.blog_service.utils;
+package ron.blog.blog_user_service.utils;
 
 import org.apache.commons.mail.EmailException;
 import org.apache.logging.log4j.LogManager;

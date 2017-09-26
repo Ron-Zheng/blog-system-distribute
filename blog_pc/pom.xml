@@ -13,10 +13,10 @@
 	<name>blog_pc Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
-		<!-- 添加对Service的依赖 -->
+		<!-- 添加对Facade的依赖 -->
 		<dependency>
 			<groupId>ron.blog</groupId>
-			<artifactId>blog_service</artifactId>
+			<artifactId>blog_facade</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
@@ -71,6 +71,20 @@
 		    <groupId>redis.clients</groupId>
 		    <artifactId>jedis</artifactId>
 		    <version>${redis_clients_version}</version>
+		</dependency>
+		
+		<!-- dubbo -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+			<version>${dubbo_version}</version>
+		</dependency>
+
+		<!-- zookeeper -->
+		<dependency>
+			<groupId>com.101tec</groupId>
+			<artifactId>zkclient</artifactId>
+			<version>${zkclient_version}</version>
 		</dependency>
 	</dependencies>
 	<build>

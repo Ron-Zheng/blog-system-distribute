@@ -3890,3 +3890,312 @@ Caused by: javax.mail.AuthenticationFailedException: 530 Error: A secure connect
 2017-09-20 11:26:00.955 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.interceptor.UserAccessInterceptor#preHandle [line:36] - 开始检测是否登录
 2017-09-20 11:26:00.955 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:49] - 用户进入用户个人首页
 2017-09-20 11:26:00.956 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/user/usercenter 花费时间 2 毫秒
+2017-09-26 16:20:38.644 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-26 16:21:30.655 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-26 16:21:32.445 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-26 16:21:32.447 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-26 16:21:32.473 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-26 16:21:32.513 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-26 16:21:32.515 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-26 16:21:32.517 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-26 16:21:32.519 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy51
+2017-09-26 16:21:32.524 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-26 16:21:32.526 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-26 16:21:32.529 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-26 16:21:32.531 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-26 16:21:32.531 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-26 16:23:14.869 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414194869
+2017-09-26 16:23:14.924 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/blog/ 花费时间 55 毫秒
+2017-09-26 16:23:17.634 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414197634
+2017-09-26 16:23:17.637 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserLoginController#login [line:47] - 用户进入登录页面
+2017-09-26 16:23:18.486 [http-apr-8080-exec-1] WARN  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:69] - /blog_pc/login 花费时间 852 毫秒
+2017-09-26 16:23:18.523 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414198522
+2017-09-26 16:23:19.291 [http-apr-8080-exec-4] WARN  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:69] - /blog_pc/login/getImageVerifyCode 花费时间 768 毫秒
+2017-09-26 16:23:28.684 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414208684
+2017-09-26 16:23:28.791 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login/loginSubmit 花费时间 107 毫秒
+2017-09-26 16:23:28.805 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414208805
+2017-09-26 16:23:28.820 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login/getImageVerifyCode 花费时间 15 毫秒
+2017-09-26 16:23:31.460 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414211460
+2017-09-26 16:23:31.460 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserLoginController#login [line:47] - 用户进入登录页面
+2017-09-26 16:23:31.464 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login 花费时间 4 毫秒
+2017-09-26 16:23:31.494 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414211494
+2017-09-26 16:23:31.507 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login/getImageVerifyCode 花费时间 13 毫秒
+2017-09-26 16:23:40.951 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414220951
+2017-09-26 16:23:41.916 [http-apr-8080-exec-3] WARN  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:69] - /blog_pc/login/loginSubmit 花费时间 965 毫秒
+2017-09-26 16:23:41.935 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414221935
+2017-09-26 16:23:41.949 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login/getImageVerifyCode 花费时间 14 毫秒
+2017-09-26 16:23:41.958 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414221958
+2017-09-26 16:23:41.958 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.interceptor.UserAccessInterceptor#preHandle [line:35] - 开始检测是否登录
+2017-09-26 16:23:41.960 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:36] - 用户进入用户个人首页
+2017-09-26 16:23:41.967 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/user/usercenter 花费时间 9 毫秒
+2017-09-26 16:24:27.715 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414267715
+2017-09-26 16:24:27.721 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.controller.user.UserRegisterController#register [line:48] - 用户进入注册页面
+2017-09-26 16:24:27.731 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/register 花费时间 16 毫秒
+2017-09-26 16:24:31.035 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414271035
+2017-09-26 16:24:31.036 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserLoginController#login [line:47] - 用户进入登录页面
+2017-09-26 16:24:31.039 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login 花费时间 4 毫秒
+2017-09-26 16:24:31.065 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414271065
+2017-09-26 16:24:31.077 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login/getImageVerifyCode 花费时间 11 毫秒
+2017-09-26 16:24:37.381 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414277381
+2017-09-26 16:24:37.383 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.user.UserLoginController#loginSubmit [line:109] - 登录时报异常 com.alibaba.dubbo.rpc.RpcException: Failed to invoke the method login in the service ron.blog.blog_facade.user.UserBaseFacade. Tried 1 times of the providers [192.168.199.191:20881] (1/1) from the registry 127.0.0.1:2181 on the consumer 192.168.199.191 using the dubbo version 2.5.5. Last error is: Failed to invoke remote method: login, provider: dubbo://192.168.199.191:20881/ron.blog.blog_facade.user.UserBaseFacade?anyhost=true&application=ron_blog_consumer&check=false&default.loadbalance=random&default.retries=0&default.shutdown.hook=true&default.shutdown.timeout=60000&default.timeout=30000&dubbo=2.5.5&generic=false&interface=ron.blog.blog_facade.user.UserBaseFacade&logger=log4j&methods=insertUser,login,checkEmail&pid=2168&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1506414088390, cause: message can not send, because channel is closed . url:dubbo://192.168.199.191:20881/ron.blog.blog_facade.user.UserBaseFacade?anyhost=true&application=ron_blog_consumer&check=false&codec=dubbo&default.loadbalance=random&default.retries=0&default.shutdown.hook=true&default.shutdown.timeout=60000&default.timeout=30000&dubbo=2.5.5&generic=false&heartbeat=60000&interface=ron.blog.blog_facade.user.UserBaseFacade&logger=log4j&methods=insertUser,login,checkEmail&pid=2168&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1506414088390
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:101) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:229) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.common.bytecode.proxy0.login(proxy0.java) ~[dubbo-2.5.5.jar:2.5.5]
+	at ron.blog.blog_pc.controller.user.UserLoginController.loginSubmit(UserLoginController.java:101) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129) [sitemesh-2.4.2.jar:?]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77) [sitemesh-2.4.2.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at ron.blog.blog_pc.filter.XSSFilter.doFilter(XSSFilter.java:43) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:164) [spring-session-1.2.2.RELEASE.jar:?]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:80) [spring-session-1.2.2.RELEASE.jar:?]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106) [catalina.jar:8.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522) [catalina.jar:8.0.33]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095) [tomcat-coyote.jar:8.0.33]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489) [tomcat-coyote.jar:8.0.33]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.33]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_20]
+Caused by: com.alibaba.dubbo.remoting.RemotingException: message can not send, because channel is closed . url:dubbo://192.168.199.191:20881/ron.blog.blog_facade.user.UserBaseFacade?anyhost=true&application=ron_blog_consumer&check=false&codec=dubbo&default.loadbalance=random&default.retries=0&default.shutdown.hook=true&default.shutdown.timeout=60000&default.timeout=30000&dubbo=2.5.5&generic=false&heartbeat=60000&interface=ron.blog.blog_facade.user.UserBaseFacade&logger=log4j&methods=insertUser,login,checkEmail&pid=2168&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1506414088390
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.send(AbstractClient.java:256) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.remoting.transport.AbstractPeer.send(AbstractPeer.java:54) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeChannel.request(HeaderExchangeChannel.java:112) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeClient.request(HeaderExchangeClient.java:86) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.ReferenceCountExchangeClient.request(ReferenceCountExchangeClient.java:78) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:97) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:69) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:54) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:69) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:69) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:77) ~[dubbo-2.5.5.jar:2.5.5]
+	... 60 more
+
+2017-09-26 16:24:37.402 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login/loginSubmit 花费时间 21 毫秒
+2017-09-26 16:24:37.419 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414277419
+2017-09-26 16:24:37.430 [http-apr-8080-exec-9] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login/getImageVerifyCode 花费时间 11 毫秒
+2017-09-26 16:24:38.551 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414278551
+2017-09-26 16:24:38.556 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login/loginSubmit 花费时间 4 毫秒
+2017-09-26 16:24:38.569 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414278569
+2017-09-26 16:24:38.581 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login/getImageVerifyCode 花费时间 12 毫秒
+2017-09-26 16:24:38.757 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414278757
+2017-09-26 16:24:38.761 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login/loginSubmit 花费时间 4 毫秒
+2017-09-26 16:24:38.940 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414278940
+2017-09-26 16:24:38.944 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login/loginSubmit 花费时间 3 毫秒
+2017-09-26 16:24:40.999 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414280999
+2017-09-26 16:24:41.000 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserLoginController#login [line:47] - 用户进入登录页面
+2017-09-26 16:24:41.005 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login 花费时间 6 毫秒
+2017-09-26 16:24:41.032 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414281032
+2017-09-26 16:24:41.044 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login/getImageVerifyCode 花费时间 12 毫秒
+2017-09-26 16:24:47.813 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414287813
+2017-09-26 16:24:47.815 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.controller.user.UserLoginController#loginSubmit [line:109] - 登录时报异常 com.alibaba.dubbo.rpc.RpcException: Failed to invoke the method login in the service ron.blog.blog_facade.user.UserBaseFacade. Tried 1 times of the providers [192.168.199.191:20881] (1/1) from the registry 127.0.0.1:2181 on the consumer 192.168.199.191 using the dubbo version 2.5.5. Last error is: Failed to invoke remote method: login, provider: dubbo://192.168.199.191:20881/ron.blog.blog_facade.user.UserBaseFacade?anyhost=true&application=ron_blog_consumer&check=false&default.loadbalance=random&default.retries=0&default.shutdown.hook=true&default.shutdown.timeout=60000&default.timeout=30000&dubbo=2.5.5&generic=false&interface=ron.blog.blog_facade.user.UserBaseFacade&logger=log4j&methods=insertUser,login,checkEmail&pid=2168&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1506414088390, cause: message can not send, because channel is closed . url:dubbo://192.168.199.191:20881/ron.blog.blog_facade.user.UserBaseFacade?anyhost=true&application=ron_blog_consumer&check=false&codec=dubbo&default.loadbalance=random&default.retries=0&default.shutdown.hook=true&default.shutdown.timeout=60000&default.timeout=30000&dubbo=2.5.5&generic=false&heartbeat=60000&interface=ron.blog.blog_facade.user.UserBaseFacade&logger=log4j&methods=insertUser,login,checkEmail&pid=2168&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1506414088390
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:101) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:229) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.common.bytecode.proxy0.login(proxy0.java) ~[dubbo-2.5.5.jar:2.5.5]
+	at ron.blog.blog_pc.controller.user.UserLoginController.loginSubmit(UserLoginController.java:101) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_20]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129) [sitemesh-2.4.2.jar:?]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77) [sitemesh-2.4.2.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at ron.blog.blog_pc.filter.XSSFilter.doFilter(XSSFilter.java:43) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:164) [spring-session-1.2.2.RELEASE.jar:?]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:80) [spring-session-1.2.2.RELEASE.jar:?]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106) [catalina.jar:8.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.33]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616) [catalina.jar:8.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522) [catalina.jar:8.0.33]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095) [tomcat-coyote.jar:8.0.33]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2500) [tomcat-coyote.jar:8.0.33]
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2489) [tomcat-coyote.jar:8.0.33]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.33]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_20]
+Caused by: com.alibaba.dubbo.remoting.RemotingException: message can not send, because channel is closed . url:dubbo://192.168.199.191:20881/ron.blog.blog_facade.user.UserBaseFacade?anyhost=true&application=ron_blog_consumer&check=false&codec=dubbo&default.loadbalance=random&default.retries=0&default.shutdown.hook=true&default.shutdown.timeout=60000&default.timeout=30000&dubbo=2.5.5&generic=false&heartbeat=60000&interface=ron.blog.blog_facade.user.UserBaseFacade&logger=log4j&methods=insertUser,login,checkEmail&pid=2168&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1506414088390
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.send(AbstractClient.java:256) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.remoting.transport.AbstractPeer.send(AbstractPeer.java:54) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeChannel.request(HeaderExchangeChannel.java:112) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeClient.request(HeaderExchangeClient.java:86) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.ReferenceCountExchangeClient.request(ReferenceCountExchangeClient.java:78) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:97) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:69) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:54) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:69) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:69) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53) ~[dubbo-2.5.5.jar:2.5.5]
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:77) ~[dubbo-2.5.5.jar:2.5.5]
+	... 60 more
+
+2017-09-26 16:24:47.821 [http-apr-8080-exec-1] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login/loginSubmit 花费时间 8 毫秒
+2017-09-26 16:24:47.841 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506414287841
+2017-09-26 16:24:47.853 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login/getImageVerifyCode 花费时间 12 毫秒
+2017-09-26 16:25:56.352 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-26 16:25:58.143 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-26 16:25:58.144 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-26 16:25:58.162 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-26 16:25:58.196 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-26 16:25:58.199 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-26 16:25:58.200 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-26 16:25:58.205 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy51
+2017-09-26 16:25:58.213 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-26 16:25:58.216 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-26 16:25:58.219 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-26 16:25:58.220 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-26 16:25:58.221 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-26 16:38:50.993 [localhost-startStop-1] DEBUG org.apache.ibatis.logging.LogFactory#setImplementation [line:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-09-26 16:38:52.263 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-26 16:38:52.264 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-26 16:38:52.283 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-26 16:38:52.324 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-26 16:38:52.326 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-26 16:38:52.328 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-26 16:38:52.330 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy48
+2017-09-26 16:38:52.337 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-26 16:38:52.339 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-26 16:38:52.341 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-26 16:38:52.342 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-26 16:38:52.342 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-26 16:39:03.764 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506415143763
+2017-09-26 16:39:03.814 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.controller.user.UserLoginController#login [line:47] - 用户进入登录页面
+2017-09-26 16:39:03.912 [http-apr-8080-exec-4] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login 花费时间 148 毫秒
+2017-09-26 16:39:04.197 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506415144197
+2017-09-26 16:39:04.788 [http-apr-8080-exec-10] WARN  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:69] - /blog_pc/login/getImageVerifyCode 花费时间 591 毫秒
+2017-09-26 16:39:10.040 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506415150040
+2017-09-26 16:39:10.042 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:45] - 进入留言页面
+2017-09-26 16:39:10.051 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/msg/send 花费时间 11 毫秒
+2017-09-26 16:39:26.237 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506415166237
+2017-09-26 16:39:27.389 [http-apr-8080-exec-7] WARN  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:69] - /blog_pc/msg/sendMsg 花费时间 1152 毫秒
+2017-09-26 16:39:29.024 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506415169024
+2017-09-26 16:39:29.025 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.controller.messages.MessagesController#send [line:45] - 进入留言页面
+2017-09-26 16:39:29.031 [http-apr-8080-exec-8] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/msg/send 花费时间 7 毫秒
+2017-09-26 16:39:58.379 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506415198379
+2017-09-26 16:39:58.385 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/blog/ 花费时间 5 毫秒
+2017-09-26 17:49:29.548 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-26 17:49:29.557 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-26 17:49:29.576 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-26 17:49:29.610 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-26 17:49:29.612 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-26 17:49:29.614 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-26 17:49:29.616 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy47
+2017-09-26 17:49:29.621 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-26 17:49:29.623 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-26 17:49:29.625 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-26 17:49:29.625 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-26 17:49:29.626 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-26 17:50:55.888 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.util.logging.LoggerFactory#make [line:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2017-09-26 17:50:55.896 [localhost-startStop-1] INFO  org.hibernate.validator.internal.util.Version#<clinit> [line:21] - HV000001: Hibernate Validator 6.0.2.Final
+2017-09-26 17:50:55.914 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver#detectJPA [line:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2017-09-26 17:50:55.948 [localhost-startStop-1] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator#buildExpressionFactory [line:88] - Loaded expression factory via original TCCL
+2017-09-26 17:50:55.950 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#messageInterpolator [line:140] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2017-09-26 17:50:55.952 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#constraintValidatorFactory [line:162] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2017-09-26 17:50:55.953 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl#parameterNameProvider [line:176] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy47
+2017-09-26 17:50:55.958 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:130] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2017-09-26 17:50:55.961 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:51] - Trying to load META-INF/validation.xml via user class loader
+2017-09-26 17:50:55.964 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:58] - Trying to load META-INF/validation.xml via TCCL
+2017-09-26 17:50:55.965 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper#getResettableInputStreamForPath [line:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2017-09-26 17:50:55.965 [localhost-startStop-1] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser#getValidationXmlInputStream [line:137] - No META-INF/validation.xml found. Using annotation based configuration only.
+2017-09-26 17:50:57.605 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506419457605
+2017-09-26 17:50:57.680 [http-apr-8080-exec-5] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/blog/ 花费时间 74 毫秒
+2017-09-26 17:51:00.247 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506419460247
+2017-09-26 17:51:00.249 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.controller.user.UserLoginController#login [line:47] - 用户进入登录页面
+2017-09-26 17:51:00.261 [http-apr-8080-exec-6] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login 花费时间 14 毫秒
+2017-09-26 17:51:00.287 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506419460287
+2017-09-26 17:51:00.775 [http-apr-8080-exec-7] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login/getImageVerifyCode 花费时间 488 毫秒
+2017-09-26 17:51:05.673 [http-apr-8080-exec-10] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506419465673
+2017-09-26 17:51:06.760 [http-apr-8080-exec-10] WARN  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:69] - /blog_pc/login/loginSubmit 花费时间 1087 毫秒
+2017-09-26 17:51:06.778 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506419466778
+2017-09-26 17:51:06.788 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#preHandle [line:36] - 开始时间：1506419466788
+2017-09-26 17:51:06.789 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.interceptor.UserAccessInterceptor#preHandle [line:35] - 开始检测是否登录
+2017-09-26 17:51:06.791 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.controller.user.UserController#login [line:36] - 用户进入用户个人首页
+2017-09-26 17:51:06.804 [http-apr-8080-exec-2] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/user/usercenter 花费时间 15 毫秒
+2017-09-26 17:51:06.813 [http-apr-8080-exec-3] INFO  ron.blog.blog_pc.interceptor.StopWatchHandlerInterceptor#afterCompletion [line:71] - /blog_pc/login/getImageVerifyCode 花费时间 35 毫秒

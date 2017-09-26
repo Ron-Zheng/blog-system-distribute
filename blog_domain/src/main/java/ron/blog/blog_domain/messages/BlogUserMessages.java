@@ -1,10 +1,18 @@
 package ron.blog.blog_domain.messages;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.validation.constraints.NotBlank;
 
-public class BlogUserMessages {
+public class BlogUserMessages implements Serializable {
+	/**
+	 * @Comment 
+	 * @Author Ron
+	 * @Date 2017年9月26日 下午4:34:32
+	 */
+	private static final long serialVersionUID = 1L;
+
 	private Integer id;
 
     private String uid;

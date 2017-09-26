@@ -1,4 +1,4 @@
-package ron.blog.blog_service.user;
+package ron.blog.blog_user_service.user;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,16 +16,16 @@ import ron.blog.blog_facade.user.UserBaseFacade;
 /**
  * @Comment 用户服务
  * @Author Ron
- * @Date 2017年8月22日 下午5:12:42
+ * @Date 2017年9月26日 下午3:45:54
  * @return
  */
-@Component
+@Component("userService")
 public class UserBaseService implements UserBaseFacade {
-	
-	private Logger logger=LogManager.getLogger(this.getClass());
-	
+	private Logger logger = LogManager.getLogger(this.getClass());
+
 	@Autowired
 	BlogUserBaseDao blogUserBaseDao;
+
 	/**
 	 * @Comment 用户登录实现
 	 * @Author Ron
@@ -36,13 +36,13 @@ public class UserBaseService implements UserBaseFacade {
 	public Resp login(BlogUserBase user) {
 		user.setUserLoginPassword(SecurityUtils.encodePassword(user.getUserLoginPassword(), user.getUserEmail()));
 		user = blogUserBaseDao.login(user.getUserEmail(), user.getUserLoginPassword());
-		if(user != null){
+		if (user != null) {
 			return new Resp(ResCode.SUCCESS, user);
-		}else{
-			return new Resp(ResCode.USER_INFO_ERROR,"");
+		} else {
+			return new Resp(ResCode.USER_INFO_ERROR, "");
 		}
 	}
-	
+
 	/**
 	 * @Comment 检查邮箱是否存在
 	 * @Author Ron
@@ -51,7 +51,7 @@ public class UserBaseService implements UserBaseFacade {
 	 */
 	@Override
 	public boolean checkEmail(String email) {
-		if(blogUserBaseDao.checkEmail(email) > 0){
+		if (blogUserBaseDao.checkEmail(email) > 0) {
 			return true;
 		}
 		return false;
@@ -65,17 +65,17 @@ public class UserBaseService implements UserBaseFacade {
 	 */
 	@Override
 	public Resp insertUser(BlogUserBase user) {
-		//生成Uid
+		// 生成Uid
 		try {
 			String uid = IdGenerator.genUUID();
 			user.setUid(uid);
-			
+
 			user.setUserLoginPassword(SecurityUtils.encodePassword(user.getUserLoginPassword(), user.getUserEmail()));
-			
+
 			blogUserBaseDao.insert(user);
 			return new Resp(ResCode.SUCCESS, "");
 		} catch (Exception e) {
-			logger.error("用户注册失败，用户邮箱{}",user.getUserEmail());
+			logger.error("用户注册失败，用户邮箱{}", user.getUserEmail());
 			return new Resp(ResCode.SYS_ERROR, "");
 		}
 	}

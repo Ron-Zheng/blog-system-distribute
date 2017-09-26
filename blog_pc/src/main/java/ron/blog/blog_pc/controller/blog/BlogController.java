@@ -29,9 +29,9 @@ public class BlogController extends BaseController {
 	
 	@Autowired
 	UserBaseFacade userBaseService;
-	
+	/*
 	@Autowired
-	BlogCommetFacade blogCommetService;
+	BlogCommetFacade blogCommetService;*/
 	
 	/**
 	 * @Comment 博客列表
@@ -49,7 +49,7 @@ public class BlogController extends BaseController {
 	 * @Author Ron
 	 * @Date 2017年9月5日 下午3:03:03
 	 * @return
-	 */
+	 *//*
 	@RequestMapping(value="/detail",method=RequestMethod.GET)
 	public String blogDetail(HttpServletRequest request){
 		List<BlogComment> list= blogCommetService.queryBlogComment("");
@@ -58,15 +58,15 @@ public class BlogController extends BaseController {
 		return "blog/detail";
 	}
 	
-	/**
+	*//**
 	 * @Comment 获取评论列表
 	 * @Author Ron
 	 * @Date 2017年9月5日 下午4:32:23
 	 * @return
-	 */
+	 *//*
 	@ResponseBody
 	@RequestMapping(value="/getCommentReply",method=RequestMethod.POST)
 	public Resp getCommentReply(HttpServletRequest request){
 		return new Resp(ResCode.SUCCESS, blogCommetService.queryBlogCommentReply(""));
-	}
+	}*/
 }

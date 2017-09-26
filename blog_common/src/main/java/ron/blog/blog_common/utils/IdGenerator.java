@@ -4,9 +4,9 @@ import java.util.Random;
 import java.util.UUID;
 
 public class IdGenerator {
-	private static final char[] numArr = {'0','1','2','3','4','5','6','7','8','9'};
-	private static final char[] numArrNoZero = {'1','2','3','4','5','6','7','8','9'};
-	private static final char[] numAndCharArr={
+	private static final char[] NUM_ARR = {'0','1','2','3','4','5','6','7','8','9'};
+	private static final char[] NUM_ARR_NO_ZERO = {'1','2','3','4','5','6','7','8','9'};
+	private static final char[] NUM_CHAR_ARR={
 			'0','1','2','3','4','5','6','7','8','9',
 			'A','B','C','D','E','F','G','H','I','J',
 			'K','L','M','N','O','P','Q','R','S','T',
@@ -41,7 +41,7 @@ public class IdGenerator {
 	 * @return
 	 */
 	public static String getRandomNumNoZero(int length){
-		return getRandom(numArrNoZero, length);
+		return getRandom(NUM_ARR_NO_ZERO, length);
 	}
 	
 	/**
@@ -51,7 +51,7 @@ public class IdGenerator {
 	 * @return
 	 */
 	public static String getRandomNum(int length){
-		return getRandom(numArr, length);
+		return getRandom(NUM_ARR, length);
 	}
 	
 	/**
@@ -61,6 +61,16 @@ public class IdGenerator {
 	 * @return
 	 */
 	public static String getRandomChar(int length) {
-		return getRandom(numAndCharArr, length);
+		return getRandom(NUM_CHAR_ARR, length);
+	}
+	
+	/**
+	 * @Comment 获取微毫秒串
+	 * @Author Ron
+	 * @Date 2017年9月25日 上午11:01:27
+	 * @return
+	 */
+	public static String getMsCode() {
+		return System.currentTimeMillis()+"";
 	}
 }
